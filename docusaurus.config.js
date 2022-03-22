@@ -38,7 +38,27 @@ const config = {
       })
     ]
   ],
-
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US'
+      },
+      fr: {
+        label: 'Français',
+        direction: 'ltr',
+        htmlLang: 'fr-FR'
+      },
+      cn: {
+        label: '简体中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN'
+      }
+    }
+  },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -54,6 +74,10 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Tutorial'
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right'
           }
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {
