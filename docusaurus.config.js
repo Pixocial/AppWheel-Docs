@@ -47,12 +47,7 @@ const config = {
         direction: 'ltr',
         htmlLang: 'en-US'
       },
-      fr: {
-        label: 'Français',
-        direction: 'ltr',
-        htmlLang: 'fr-FR'
-      },
-      cn: {
+      zh: {
         label: '简体中文',
         direction: 'ltr',
         htmlLang: 'zh-CN'
