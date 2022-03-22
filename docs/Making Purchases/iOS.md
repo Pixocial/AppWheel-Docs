@@ -37,5 +37,5 @@ AWPurchaseKit.purchaseProduct(product,
 - product: Products
 - paymentDiscount: Discounts. Only for subscription products and can be acquired through Product.discounts. No transferable nil. 
 - quantity: The quantity of purchases. The quantity of subscription products is 1, as is other product types.
-- productType: Product types, which can be determined according to the SKU. There are four product types: (0: Consumable product, 1: Non-consumable product, 2: Auto-renewal subscription, and 3: Non-automatic renewal subscription) Please refer to the AWProductType in [AppWheel SDK Integration Document - Introduction to iOS Classes]().
+- productType: Product types, which can be determined according to the SKU. There are four product types: (0: Consumable product, 1: Non-consumable product, 2: Auto-renewal subscription, and 3: Non-automatic renewal subscription)
 

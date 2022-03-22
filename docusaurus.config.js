@@ -40,7 +40,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'zh'],
+    locales: ['en', 'zh'],
     localeConfigs: {
       en: {
         label: 'English',
