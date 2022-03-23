@@ -1,7 +1,5 @@
-# Android
 
-## 安装
-### 说明：
+
 本SDK托管于Maven，推荐使用gradle安装本SDK
  在project.gradle文件中添加如下代码
  

@@ -1,12 +1,14 @@
-# Android
 
-## 初始化SDK
-### 说明：
+
 SDK的初始化方法，用户根据自己的情况尽早在app中初始化
 
-java:
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```java
+<Tabs>
+  <TabItem value="Java" label="Java" default>
+
+```Java
 ///低于版本1.0.5.6的
 // 在Application中的oncreate中初始化配置，appId为注册应用时候分配的应用id
 Billing.configure(context ,"appid" , appUserId , 
@@ -25,15 +27,19 @@ new OnBillingClientSetupFinishedListener(){
     }
 });
 ```
-Kotlin:
+  </TabItem>
+  <TabItem value="Kotlin" label="Kotlin">
 
-```kotlin
-///低于版本1.0.5.6的
-// 在Application中的oncreate中初始化配置，appId为注册应用时候分配的应用id
+```Kotlin
+///Older than version 1.0.5.6
+//Initialize the configuration in Application - oncreate. The appId refers to the ID you received when registering. 
 Billing.configure(context ,"appid" , appUserId , listener)
-///1.0.5.6之后
+///Version 1.0.5.6 or later
 Billing.configure(context ,"appid" , secret, appUserId , listener)
 ```
+  </TabItem>
+
+</Tabs>
 
 
 

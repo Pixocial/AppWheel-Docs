@@ -1,13 +1,14 @@
-# iOS
 
-## 初始化SDK
-### 说明：
 SDK的初始化方法，用户根据自己的情况尽早在app中初始化
 
-Objective-C:
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```Objective-C
-///2.0.1.3版本前请使用以下方式  
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C 
+///Please use the following method for versions older than 2.0.1.3.  
 AWPurchaseKit configureWithAppId:appid 
                              uid:userId     
                       completion:^(BOOL success, AWError * _Nonnull error) {
@@ -18,7 +19,7 @@ AWPurchaseKit configureWithAppId:appid
     }
   }
   
-  ///2.0.1.3版本后修改为  
+  ///Use the following method for version 2.0.1.3 and above.  
 [AWPurchaseKit configureWithAppId:appId 
                            secret:appSecret
                               uid:userId
@@ -30,11 +31,11 @@ AWPurchaseKit configureWithAppId:appid
                 }
   }];
 ```
-  
-Swift:
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
 ```Swift
-///2.0.1.3版本前请使用以下方式  
+///Please use the following method for versions older than 2.0.1.3.  
 AWPurchaseKit.configure(withAppId: appId, 
                               uid: uid) { [weak self](success, error) in
       if success == false {
@@ -44,7 +45,7 @@ AWPurchaseKit.configure(withAppId: appId,
       }
     }
     
- ///2.0.1.3之后修改为
+ ///Use the following method for version 2.0.1.3 and above.
  AWPurchaseKit.configure(withAppId: appId, 
                             secret:appSecret 
                                uid: uid) { [weak self](success, error) in
@@ -55,6 +56,9 @@ AWPurchaseKit.configure(withAppId: appId,
       }
     }
 ```
+  </TabItem>
+</Tabs>
+
 
 ### 参数：
 *  `appId`: 由AW的服务器生成，生成步骤请见文档：新建应用（外部版） 

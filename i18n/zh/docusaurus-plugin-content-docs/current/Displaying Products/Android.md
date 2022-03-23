@@ -1,12 +1,13 @@
-# Android
 
-## 获取商品
-### 说明：
 调用该方法获取商品信息，应在展示商品页面前提前加载商品信息，完成商品的展示
 
-java:
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```java
+<Tabs>
+  <TabItem value="Java" label="Java" default>
+
+```Java
 Market.getInstance().getProductsInfo(itemType, skuList, new OnQueryProductListener() {
     @Override
     public void onSuccess(List<Product> productInfo) {
@@ -18,9 +19,10 @@ Market.getInstance().getProductsInfo(itemType, skuList, new OnQueryProductListen
     }
 });
 ```
-kotlin:
+  </TabItem>
+  <TabItem value="Kotlin" label="Kotlin">
 
-```kotlin
+```Kotlin
 Market.getInstance().getProductsInfo(itemType, skuList, object : OnQueryProductListener {
     override fun onSuccess(productInfo: List<Product>) {
         
@@ -30,6 +32,9 @@ Market.getInstance().getProductsInfo(itemType, skuList, object : OnQueryProductL
     }
 })
 ```
+  </TabItem>
+
+</Tabs>
 
 ### 参数：
 - itemType：sku类型，INAPP、SUBS两种类型

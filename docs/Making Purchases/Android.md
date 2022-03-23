@@ -56,6 +56,7 @@ Market.getInstance().purchaseProduct(activity, mProduct, object : InitiatePurcha
   </TabItem>
 
 </Tabs>
+
 ### Parameters:
 - product: Products to be purchased
 
@@ -64,9 +65,10 @@ Market.getInstance().purchaseProduct(activity, mProduct, object : InitiatePurcha
 #### Description:
  The paymentType for INAPP products is 2 and there is no need to use this interface for subscription products. If the purchased INAPP products are not consumed, then cannot be purchased again until they are consumed.
 
-java:
+<Tabs>
+  <TabItem value="Java" label="Java" default>
 
-```java
+```Java
 Market.getInstance().consumePurchaseFlow(purchase, new ConsumeResponseListener() {
     @Override
     public void onConsumeResponse(int resultCode) {
@@ -76,9 +78,10 @@ Market.getInstance().consumePurchaseFlow(purchase, new ConsumeResponseListener()
     }
 });
 ```
-kotlin:
+  </TabItem>
+  <TabItem value="Kotlin" label="Kotlin">
 
-```kotlin
+```Kotlin
 Market.getInstance().consumePurchaseFlow(purchase, object : ConsumeResponseListener() {
     fun onConsumeResponse(resultCode: Int) {
         if (resultCode == Types.BillingResponseCode.OK) {
@@ -87,5 +90,8 @@ Market.getInstance().consumePurchaseFlow(purchase, object : ConsumeResponseListe
     }
 })
 ```
+  </TabItem>
+</Tabs>
+
 #### Parameters:
 - purchase: MTGPurchase type. Please choose the corresponding purchase value according to the products you need.

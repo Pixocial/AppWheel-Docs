@@ -1,12 +1,14 @@
-# iOS
 
-## 获取商品
-### 说明：
 调用该方法获取商品信息，应在展示商品页面前提前加载商品信息，完成商品的展示
 
-Objective-C:
 
-```Objective-C
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C 
 [AWPurchaseKit getProductsInfoWithProductIdentifiers:self.skuSet 
                                           completion:^(RetrievedProducts * _Nonnull retrievedProducts) {
       if (retrievedProducts.error) {
@@ -24,8 +26,8 @@ Objective-C:
       }
     }];
 ```
-
-Swift:
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
 ```Swift
 AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] (result) in
@@ -37,6 +39,8 @@ AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] 
           }
   }
 ```
+  </TabItem>
+</Tabs>
 
 ### 参数：
 `productIdentifiers`:sku的id的set集合

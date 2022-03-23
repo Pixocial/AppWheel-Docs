@@ -1,15 +1,16 @@
-# iOS
 
-## 购买商品
-### 说明
 用户选择商品后，调用该方法完成在appStore的购买，需要注意开发者应该在调用该方法前判断商品类型，然后传入该方法的`productType`参数中完成购买。
 
-Objective-C:
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```Objective-C
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C 
 [AWPurchaseKit purchaseProduct:product 
                       quantity:quantity 
-                   productType:productType 
+                   AWProducts 
                paymentDiscount:paymentDiscount completion:^(BOOL success, AWError * _Nonnull error) {
                 if (!success) {
                   //purchase failed, check error
@@ -18,7 +19,8 @@ Objective-C:
                 }
           }];
 ```
-Swift:
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
 ```Swift
 AWPurchaseKit.purchaseProduct(product, 
@@ -32,6 +34,8 @@ AWPurchaseKit.purchaseProduct(product,
         }
       }
 ```
+  </TabItem>
+</Tabs>
 
 ### 参数：
 *  `product:` 商品
