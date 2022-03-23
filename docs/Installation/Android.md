@@ -1,7 +1,4 @@
-# Android
 
-## Installation
-### Description:
  This SDK is hosted on Maven, and we recommend using gradle to install this SDK.
  Add the following code to the project.gradle file:
 

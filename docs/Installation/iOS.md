@@ -1,8 +1,5 @@
-# iOS
 
-## Installation
-
-###The integration should be done with CocoaPods and the following orders should be added to Podfile.
+The integration should be done with CocoaPods and the following orders should be added to Podfile.
 
 ```Objective-C 
 pod 'AppWheel'

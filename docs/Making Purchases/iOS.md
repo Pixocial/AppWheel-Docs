@@ -1,10 +1,13 @@
-# iOS
 
-## Purchase Products
-### Description:
+
  This method should be called to complete a purchase when a user has selected a product. The developers should tell the product type before calling this method and then pass the productType to complete the purchase.
 
-Objective-C:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
 [AWPurchaseKit purchaseProduct:product 
@@ -18,7 +21,8 @@ Objective-C:
                 }
           }];
 ```
-Swift:
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
 ```Swift
 AWPurchaseKit.purchaseProduct(product, 
@@ -32,6 +36,8 @@ AWPurchaseKit.purchaseProduct(product,
         }
       }
 ```
+  </TabItem>
+</Tabs>
 
 ### Parameters:
 - product: Products

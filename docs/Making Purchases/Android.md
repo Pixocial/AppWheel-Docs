@@ -1,12 +1,14 @@
-# Android
 
-## Purchase Products
-### Description:
+
  This method should be called to complete a purchase when a user has selected a product. The developers should tell the product type before calling this method and then pass the productType to complete the purchase.
 
-java:
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```java
+<Tabs>
+  <TabItem value="Java" label="Java" default>
+
+```Java
 Market.getInstance().purchaseProduct(ProductDetailActivity.this, mProduct, new InitiatePurchaseListener() {
     @Override
     public void onVerifying(boolean isVerifying) {
@@ -29,9 +31,10 @@ Market.getInstance().purchaseProduct(ProductDetailActivity.this, mProduct, new I
     }
 });
 ```
-kotlin:
+  </TabItem>
+  <TabItem value="Kotlin" label="Kotlin">
 
-```kotlin
+```Kotlin
 Market.getInstance().purchaseProduct(activity, mProduct, object : InitiatePurchaseListener {
     override fun onVerifying(isVerifying: Boolean) {
         //Callback of ongoing backend verification
@@ -50,6 +53,9 @@ Market.getInstance().purchaseProduct(activity, mProduct, object : InitiatePurcha
     }
 })
 ```
+  </TabItem>
+
+</Tabs>
 ### Parameters:
 - product: Products to be purchased
 

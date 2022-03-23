@@ -1,26 +1,66 @@
-# iOS
 
-## View User Benefits
+
  The following method is used to check a user's existing purchased products.
-### Obtain the current valid orders
+
+### Telling if there is an ongoing subscription service
 #### Description:
- The following method is used to check a user's existing valid orders, including valid subscription and unconsumed INAPP products.
+ Tell if a user has an ongoing subscription service. If yes, this method can be used to tell the benefits the user enjoys.
 
-```java
-UserOrderManager.getProvider().getOrders()
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C 
+[[AWPurchaseKit getPurchaseInfo] isSubscriptionUnlockedUser]
 ```
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
-```kotlin
-UserOrderManager.getProvider().getOrders()
+```Swift
+AWPurchaseKit.getPurchaseInfo().isSubscriptionUnlockedUser()
 ```
+  </TabItem>
+</Tabs>
 
-### Obtain current subscription
+### Obtain the existing valid subscriptions
 #### Description:
- This method is used to obtain a user's existing valid subscription. If there is no valid subscription, an empty result will be returned.
+ It is used to tell a user's existing valid subscription.
 
-```java
-SubsPurchase recentSubsPurchase = UserOrderManager.getProvider().getRecentSubsPurchase();
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C 
+[[AWPurchaseKit getPurchaseInfo] getCurrentValidSubscriptions]
 ```
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
-```kotlin
-val recentSubsPurchase = UserOrderManager.getProvider().recentSubsPurchase
+```Swift
+AWPurchaseKit.getPurchaseInfo().getCurrentValidSubscriptions()
+```
+  </TabItem>
+</Tabs>
+
+### Obtain the currently owned non-consumable and non-renewable subscription products.
+#### Description:
+ It is used to obtain the consumable, non-consumable, and non-renewable subscription items currently owned by the user.
+
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C 
+[[AWPurchaseKit getPurchaseInfo] purchasedArray]
+```
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
+
+```Swift
+AWPurchaseKit.getPurchaseInfo().purchasedArray()
+```
+  </TabItem>
+</Tabs>

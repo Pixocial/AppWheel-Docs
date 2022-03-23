@@ -1,12 +1,15 @@
-# Android
 
-## Get Products
-### Description:
+
  This method is used to acquire product information. The product information should be loaded before displaying product page.
 
-java:
 
-```java
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="Java" label="Java" default>
+
+```Java
 Market.getInstance().getProductsInfo(itemType, skuList, new OnQueryProductListener() {
     @Override
     public void onSuccess(List<Product> productInfo) {
@@ -18,10 +21,10 @@ Market.getInstance().getProductsInfo(itemType, skuList, new OnQueryProductListen
     }
 });
 ```
+  </TabItem>
+  <TabItem value="Kotlin" label="Kotlin">
 
-kotlin:
-
-```kotlin
+```Kotlin
 Market.getInstance().getProductsInfo(itemType, skuList, object : OnQueryProductListener {
     override fun onSuccess(productInfo: List<Product>) {
         
@@ -31,6 +34,11 @@ Market.getInstance().getProductsInfo(itemType, skuList, object : OnQueryProductL
     }
 })
 ```
+  </TabItem>
+
+</Tabs>
+
+
 ### Parameters:
 - itemType: SKU types, including INAPP and SUBS.
 - skuList : Collection of SKU IDs.

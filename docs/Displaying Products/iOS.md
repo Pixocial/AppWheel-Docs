@@ -1,10 +1,13 @@
-# iOS
 
-## Get Products
-### Description:
+
  This method is used to acquire product information. The product information should be loaded before displaying product page.
 
-Objective-C:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
 [AWPurchaseKit getProductsInfoWithProductIdentifiers:self.skuSet 
@@ -24,8 +27,8 @@ Objective-C:
       }
     }];
 ```
-
-Swift:
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
 
 ```Swift
 AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] (result) in
@@ -37,6 +40,8 @@ AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] 
           }
   }
 ```
+  </TabItem>
+</Tabs>
   
 ### Parameters:
  productIdentifiers: Collection of SKU IDs.
