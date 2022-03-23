@@ -66,7 +66,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'AppWheel-SDK-Integration-Document',
+            docId: 'AppWheel-SDK-Integration',
             position: 'left',
             label: 'Tutorial'
           },

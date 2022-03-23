@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/AppWheel-SDK-Integration-Document">
+            to="/docs/AppWheel-SDK-Integration">
             Docusaurus Tutorial - 5min ⏱️
           </Link>
         </div>
