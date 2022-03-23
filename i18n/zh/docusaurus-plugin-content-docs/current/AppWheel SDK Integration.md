@@ -5,7 +5,7 @@ id: AppWheel-SDK-Integration
 ---
 # AppWheel SDK Integration
 ## 整体流程
-![Overall Process](/img/integration/overallProcess.jpg)
+![Overall Process](/img/integration/overallProcess-zh.jpg)
 
 ## iOS 对接
 ### 第一步：创建应用
