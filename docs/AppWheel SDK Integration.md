@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: AppWheel SDK Integration
 id: AppWheel-SDK-Integration
+slug: /
 ---
 # AppWheel SDK Integration
 ## Overall Process
