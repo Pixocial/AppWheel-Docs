@@ -1,5 +1,0 @@
----
-filename: _redirects
----
-/ https://appwheel.com 301
-/home301 / 301
