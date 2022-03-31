@@ -1,5 +1,5 @@
  
-###  Integration Requirements Android 16 and above
+###  Integration Requirements Android SDK version 16 and above
 
  This SDK is hosted on Maven, and we recommend using gradle to install this SDK.
  Add the following code to the project.gradle file:

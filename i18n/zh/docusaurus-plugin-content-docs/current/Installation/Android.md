@@ -1,6 +1,6 @@
 
 
-### 接入要求： Android 16 及其以上
+### 接入要求： Android SDk 版本 16 及其以上
 本SDK托管于Maven，推荐使用gradle安装本SDK
  在project.gradle文件中添加如下代码
  
