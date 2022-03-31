@@ -18,7 +18,7 @@ slug: /
 - **App Bundle ID:** bundleID为您的应用的在苹果商店的标识，可以在App Store Connect中查看您的app获得
 - **iTunesConnect App Specific Shared Secret:** 共享密钥，这个密钥在校验您的app产生的订单收据时需要用到。获取方法可以参照： [https://help.apple.com/app-store-connect/#/devf341c0f01](https://help.apple.com/app-store-connect/#/devf341c0f01)，有两种共享密钥可供选择：一种是：针对所有app的共享密钥；另外一种是针对单个app的共享密码。建议使用“针对单个app的共享密钥。
 
-### Step 2: 应用配置
+### 第二步: 应用配置
 #### 通知配置(<font color="red"> **重要：如果有自己的接收服务器参考「配置通知接收服务器」说明"**</font>)
   - 把Apple服务器通知发送Appwheel，请将以下地址
   
@@ -50,8 +50,12 @@ slug: /
 - 对接前已有商品配置
 - 对接前没有商品配置
 
+### 第三步: 安装SDK
 
-### Step 3: 验收检查
+[iOS SDK 安装](/Installation/iOS.md)
+
+
+### 第四步: 验收检查
 - □App 配置检查
 	- □通知是否配置成功：检查 AppStoreConnect 后台的配置
 
@@ -126,6 +130,9 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 ##### 对接前已有商品配置
 ##### 对接前没有商品配置
 
+
+### 第三步：安装SDK
+[Android SDK 安装](/Installation/Android.md)
 
 ### 第四步：验收检查
 - □App 配置检查

@@ -49,8 +49,11 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 ▪ There's already a product configuration
 ▪ No product configuration
 
+### Step 3: Install the SDK
 
-### Step 3: Acceptance Inspection
+[iOS SDK Installation](/Installation/iOS.md)
+
+### Step 4: Acceptance Inspection
 - □ App Configuration Check
 - □ Whether the notification is configured successfully: Check the configuration in the AppStoreConnect backend
 
@@ -126,8 +129,11 @@ To Google Cloud Platform：
 ##### There's already a product configuration
 ##### No product configuration
 
+### Step 3: Install the SDK
 
-### Step 3: Acceptance Inspection
+[Android SDK Installation](/Installation/Android.md)
+
+### Step 4: Acceptance Inspection
 - □ App Configuration Check
 - □ To make sure a notification is configured successfully: Check if the Google Cloud Pub/Sub queue has notification settings
 
