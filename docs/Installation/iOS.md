@@ -1,4 +1,6 @@
 
+### Integration Requirements iOS 10.0 and above
+
 The integration should be done with CocoaPods and the following orders should be added to Podfile.
 
 ```Objective-C 
