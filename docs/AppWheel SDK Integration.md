@@ -20,9 +20,12 @@ slug: /
 
 ### Step 2: Configuration
 #### Notification Receiving Configuration(<font color="red"> **Important: If you have your own receiving server, please refer to the "Configure Notification Receiving Server"**</font>)
-To send Apple server notifications to Appwheel, please configure the following address ([https://msgserver-dot-subscription-saas.uc.r.appspot.com/subcenter/receive_ios_notification](https://msgserver-dot-subscription-saas.uc.r.appspot.com/subcenter/receive_ios_notification)) to Apple Store Connect: (Currently supports V1 type notifications)
+To send Apple server notifications to Appwheel, please configure the following address
 
 
+![Overall Process](/img/integration/notificationReceivingConfiguration0.png)
+
+to Apple Store Connect: (Currently supports V1 type notifications)
 ![Overall Process](/img/integration/notificationReceivingConfiguration1.png)
 
 
@@ -33,7 +36,7 @@ To send Apple server notifications to Appwheel, please configure the following a
 
 ![Overall Process](/img/integration/configServerIOS.png)
 
-￮ After the configuration is complete, you can test the availability of the address. The configuration must be consistent with the requirements, that is, accept the request of the POST method, return 200 Http status code after successful processing, and return 400 or 500 status code when processing fails. In addition, because there is no actual business data body in the test, the 200 http status code can be returned when empty data is received.
+▪ After the configuration is complete, you can test the availability of the address. The configuration must be consistent with the requirements, that is, accept the request of the POST method, return 200 Http status code after successful processing, and return 400 or 500 status code when processing fails. In addition, because there is no actual business data body in the test, the 200 http status code can be returned when empty data is received.
 
 #### p8 file configuration for purchasing discounted products
 When your app has a discount set in the Apple App Store, and you want to sync the information to AppWheel, you need to set the p8 file in AppWheel。
@@ -105,11 +108,17 @@ Parameter: taskId. The value of AWCouponModel, which is obtained from calling th
 
 ### Step 2: Configuration
 #### Notification Receiving Configuration (<font color="red"> **Important: If you have your own receiving server, please refer to the "Configure Notification Receiving Server"**</font>)
-To send Google server notifications to AppWheel, please configure the address (https://msgserver-dot-subscription-saas.uc.r.appspot.com/subcenter/receive_android_notification) on the Google Cloud Platform.
+To send Google server notifications to AppWheel, please configure the address
+
+![configServerAndroid](/img/integration/configServerAndroid.png)
+To Google Cloud Platform：
 
 ![notificationReceivingConfigurationAndroid](/img/integration/notificationReceivingConfigurationAndroid.png)
 #### Configure Notification Receiving Server
 ▪ If you have your own notification receiving server that needs the push data, you can set the receiving server address in the AppWheel main site. We will send each message once in the order in which the messages arrive, but sometimes the messages may not be delivered in sequence, or will be transmitted multiple times. You should design the program in the way of idempotent processing.
+
+![configServerAndroid](/img/integration/configServerAndroid.png)
+
 
 ▪ After the configuration is complete, you can test the availability of the address. The configuration must be consistent with the requirements, that is, accept the request of the POST method, return 200 Http status code after successful processing, and return 400 or 500 status code when processing fails. In addition, because there is no actual business data body in the test, the 200 http status code can be returned when empty data is received.
 
