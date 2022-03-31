@@ -25,7 +25,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://https://github.com/Pixocial/AppWheel-Docs'
+          editUrl: 'https://github.com/Pixocial/AppWheel-Docs'
         },
         blog: false,
         theme: {
@@ -57,14 +57,14 @@ const config = {
         title: 'AppWheel',
         logo: {
           alt: 'AppWheel Logo',
-          src: 'img/logo.svg'
+          src: 'img/logo_color.svg'
         },
         items: [
           {
             type: 'doc',
             docId: 'AppWheel-SDK-Integration',
             position: 'left',
-            label: 'Tutorial'
+            label: ' '
           },
           {
             type: 'localeDropdown',
