@@ -4,7 +4,6 @@ title: Quick Start
 id: AppWheel-SDK-Integration
 slug: /
 ---
-# AppWheel SDK Integration
 ## Overall Process
 ![Overall Process](/img/integration/overallProcess.jpg)
 
