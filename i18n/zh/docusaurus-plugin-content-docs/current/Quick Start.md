@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: AppWheel SDK Integration
+sidebar_position: 0
+title: Quick Start
 id: AppWheel-SDK-Integration
 slug: /
 ---
