@@ -91,4 +91,19 @@ int SERVER_USER_NOT_ATTACH = 103;
 ```
 
   </TabItem>
+  <TabItem value="Stripe" label="Stripe">
+
+```Object-C
+
+     ErrAwPurchaseSkuIncomplete = 205001
+     ErrAwPurchaseStripeApi = 205002
+     ErrAwPurchaseSameGroupProduct = 205003
+     ErrAwPurchaseUserIncomplete = 205004
+     ErrAwPurchaseOrderNotExist = 205005
+     ErrAwPurchaseCheckoutNotExist = 205006
+     ErrAwPurchaseSkuNotSameGroup = 205007
+     
+```
+
+  </TabItem>
 </Tabs>
