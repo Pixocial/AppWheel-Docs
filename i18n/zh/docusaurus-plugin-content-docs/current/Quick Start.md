@@ -49,12 +49,31 @@ slug: /
 - 对接前已有商品配置
 - 对接前没有商品配置
 
-### 第三步: 安装SDK
+### 第三步：环境安装
+
+#### 接入要求：iOS 10.0及其以上
+
+#### Cocoapods
+此SDK托管于[Cocoapods]( https://cocoapods.org/)，在安装本SDK之前请确保您已安装Cocoapods，并且您的项目已经用Cocoapods编译并且成功运行过。
+在您的项目已经使用Cocoapods编译并且成功运行过，在您的项目中有一个Podfile文件，在Podfile文件中添加以下代码：
+
+```Objective-C
+pod 'AppWheel'
+```
+最新版本请通过官方网站查看，或者执行：pod search AppWheel 获得
+
+#### 添加Bridging-Header.h
+如果您的项目是纯swift的项目，那么您需要[把Objective-C引入Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift)  ，当您完成了把Objective-C引入Swift之后，在您的项目中应该有一个Bridging-Header.h文件，在Bridging-Header.h中添加以下代码，就可以在项目中使用本SDK了
+```Objective-C
+import <PurchaseSDK/AWPurchaseKit.h>
+```
+
+### 第四步: 安装SDK
 
 [iOS SDK 安装](/Installation/iOS.md)
 
 
-### 第四步: 验收检查
+### 第五步: 验收检查
 - □App 配置检查
 	- □通知是否配置成功：检查 AppStoreConnect 后台的配置
 
