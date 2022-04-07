@@ -1,7 +1,7 @@
 ---
 sidebar_position: 7
 title: Adding a Global Listener
-id: Adding a Global Listener
+id: Adding_a_Global_Listener
 ---
 
 

@@ -30,7 +30,7 @@ to Apple Store Connect: (Currently supports V1 type notifications)
 
 ![Overall Process](/img/integration/notificationReceivingConfiguration2.png)
 
-#### Configure Notification Receiving Server
+#### Configure Notification Receiving Server(optional)
 ▪ If you have your own notification receiving server that needs the push data, you can set the receiving server address in the AppWheel main site. We will send each message once in the order in which the messages arrive, but sometimes the messages may not be delivered in sequence, or will be transmitted multiple times. You should design the program in the way of idempotent processing.
 
 ![Overall Process](/img/integration/configServerIOS.png)
@@ -50,7 +50,19 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 
 ### Step 3: Install the SDK
 
-[iOS SDK Installation](/Installation/iOS.md)
+[SDK Installation](/Installation/iOS.md)
+
+[Configuring The SDK](/ConfiguringTheSDK/iOS)
+
+[Displaying Products](/DisplayingProducts/iOS.md)
+
+[Making Purchases](/MakingPurchases/iOS.md)
+
+[Restoring Purchases](/Restoring_Purchases)
+
+[User Benefits](/UserBenefits/iOS.md)
+
+[Adding a Global Listener](/Adding_a_Global_Listener)
 
 ### Step 4: Acceptance Inspection
 - □ App Configuration Check
@@ -113,10 +125,10 @@ Parameter: taskId. The value of AWCouponModel, which is obtained from calling th
 To send Google server notifications to AppWheel, please configure the address
 
 ![configServerAndroid](/img/integration/configServerAndroid.png)
-To Google Cloud Platform：
+To Google Cloud Platform:
 
 ![notificationReceivingConfigurationAndroid](/img/integration/notificationReceivingConfigurationAndroid.png)
-#### Configure Notification Receiving Server
+#### Configure Notification Receiving Server(optional)
 ▪ If you have your own notification receiving server that needs the push data, you can set the receiving server address in the AppWheel main site. We will send each message once in the order in which the messages arrive, but sometimes the messages may not be delivered in sequence, or will be transmitted multiple times. You should design the program in the way of idempotent processing.
 
 ![configServerAndroid](/img/integration/configServerAndroid.png)
@@ -130,7 +142,19 @@ To Google Cloud Platform：
 
 ### Step 3: Install the SDK
 
-[Android SDK Installation](/Installation/Android.md)
+[SDK Installation](/Installation/Android.md)
+
+[Configuring The SDK](/ConfiguringTheSDK/Android)
+
+[Displaying Products](/DisplayingProducts/Android.md)
+
+[Making Purchases](/MakingPurchases/Android.md)
+
+[Restoring Purchases](/Restoring_Purchases)
+
+[User Benefits](/UserBenefits/Android.md)
+
+[Adding a Global Listener](/Adding_a_Global_Listener)
 
 ### Step 4: Acceptance Inspection
 - □ App Configuration Check

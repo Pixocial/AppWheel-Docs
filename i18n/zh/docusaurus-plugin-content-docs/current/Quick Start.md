@@ -17,7 +17,7 @@ slug: /
 - **App Bundle ID:** bundleID为您的应用的在苹果商店的标识，可以在App Store Connect中查看您的app获得
 - **iTunesConnect App Specific Shared Secret:** 共享密钥，这个密钥在校验您的app产生的订单收据时需要用到。获取方法可以参照： [https://help.apple.com/app-store-connect/#/devf341c0f01](https://help.apple.com/app-store-connect/#/devf341c0f01)，有两种共享密钥可供选择：一种是：针对所有app的共享密钥；另外一种是针对单个app的共享密码。建议使用“针对单个app的共享密钥。
 
-### 第二步: 应用配置
+### 第二步：应用配置
 #### 通知配置(<font color="red"> **重要：如果有自己的接收服务器参考「配置通知接收服务器」说明"**</font>)
   - 把Apple服务器通知发送Appwheel，请将以下地址
   
@@ -31,7 +31,7 @@ slug: /
   
 ![Overall Process](/img/integration/notificationReceivingConfiguration2-zh.png)
 
-#### 配置通知接收服务器
+#### 配置通知接收服务器（可选）
 - 如果业务方有自己的通知接收服务器需要这部分推送数据可以再 AppWheel 主站里设置接收服务器地址，我们会按照消息到来的顺序将每条消息发送一次，但有时可能并不按顺序传送消息，或者会将消息传送多次，业务方需按照幂等处理的方式设计程序。
 
 ![Overall Process](/img/integration/configServerIOS.png)
@@ -68,12 +68,24 @@ pod 'AppWheel'
 import <PurchaseSDK/AWPurchaseKit.h>
 ```
 
-### 第四步: 安装SDK
+### 第四步：安装SDK
 
-[iOS SDK 安装](/Installation/iOS.md)
+[SDK 安装](/Installation/iOS.md)
+
+[配置SDK](/ConfiguringTheSDK/iOS.md)
+
+[请求商品](/DisplayingProducts/iOS.md)
+
+[购买](/MakingPurchases/iOS.md)
+
+[恢复购买](/Restoring_Purchases)
+
+[获取用户权益](/UserBenefits/iOS.md)
+
+[添加全局监听](/Adding_a_Global_Listener)
 
 
-### 第五步: 验收检查
+### 第五步：验收检查
 - □App 配置检查
 	- □通知是否配置成功：检查 AppStoreConnect 后台的配置
 
@@ -137,7 +149,7 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ![notificationReceivingConfigurationAndroid](/img/integration/notificationReceivingConfigurationAndroid-zh.png)
 
-#### 配置通知接收服务器
+#### 配置通知接收服务器（可选）
 - 如果业务方有自己的通知接收服务器需要这部分推送数据可以再 AppWheel 主站里设置接收服务器地址，我们会按照消息到来的顺序将每条消息发送一次，但有时可能并不按顺序传送消息，或者会将消息传送多次，业务方需按照幂等处理的方式设计程序。
 
 ![notificationReceivingConfigurationAndroid](/img/integration/configServerAndroid.png)
@@ -150,7 +162,20 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 
 ### 第三步：安装SDK
-[Android SDK 安装](/Installation/Android.md)
+
+[SDK 安装](/Installation/Android.md)
+
+[配置SDK](/ConfiguringTheSDK/Android.md)
+
+[请求商品](/DisplayingProducts/Android.md)
+
+[购买](/MakingPurchases/Android.md)
+
+[恢复购买](/Restoring_Purchases)
+
+[获取用户权益](/UserBenefits/Android.md)
+
+[添加全局监听](/Adding_a_Global_Listener)
 
 ### 第四步：验收检查
 - □App 配置检查

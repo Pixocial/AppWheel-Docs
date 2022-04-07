@@ -143,11 +143,11 @@
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Précédent",
+    "message": "上一步",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Suivant",
+    "message": "下一步",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -188,10 +188,6 @@
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "dernière version",
     "description": "The label used for the latest version suggestion link label"
-  },
-  "theme.common.editThisPage": {
-    "message": "Éditer cette page",
-    "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
     "message": "Lien direct vers le titre",

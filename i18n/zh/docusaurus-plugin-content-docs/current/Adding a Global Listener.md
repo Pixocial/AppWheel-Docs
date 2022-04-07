@@ -1,11 +1,10 @@
 ---
 sidebar_position: 7
 title: Adding a Global Listener
-id: Adding a Global Listener
+id: Adding_a_Global_Listener
 ---
 
-
-This method is used to add a global listener, which will be called after purchase, subscription renewal, and/or restoring purchases. Developers should set up listeners as soon as possible after initialization for callbacks in a timely manner.
+添加全局的监听，在发生购买、续期订阅、恢复购买之后全局监听都会被调用。开发者应该在初始化之后尽早的设置监听，以便及时的监听回调
 
 
 
