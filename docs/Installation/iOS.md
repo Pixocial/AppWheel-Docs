@@ -7,7 +7,7 @@ The integration should be done with CocoaPods and the following orders should be
 pod 'AppWheel'
 ```
 
-The latest version can be obtained through the official website or by executing pod search AppWheel.
+The latest version can be obtained by executing pod search AppWheel.
  All methods support Swift calls. Please add the following sentences to the Bridging-Header file.
 
 ```Objective-C 
