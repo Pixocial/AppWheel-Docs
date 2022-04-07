@@ -65,28 +65,28 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 [Adding a Global Listener](/Adding_a_Global_Listener)
 
 ### Step 4: Acceptance Inspection
-- □ App Configuration Check
-- □ Whether the notification is configured successfully: Check the configuration in the AppStoreConnect backend
+- App Configuration Check
+- Whether the notification is configured successfully: Check the configuration in the AppStoreConnect backend
 
 ![Overall Process](/img/integration/appStoreConnectBackend.png)
 
-- □ App configuration is as follows
+- App configuration is as follows
 
 ![Overall Process](/img/integration/appConfiguration.png)
 
 ![Overall Process](/img/integration/addP8File.png)
 
-- □ Whether the initialization interface is called at startup
-- □ Whether the AppWheel SDK can get the information of purchased products
-- □ Subscription Products
-- □ Discount products (optional)
-- □ Discount for new users
-- □ Promotion offer
-- □ Coupon
-- □ Consumable products
-- □ Non-consumable products
-- □ Non-renewable products
-- □ Whether the AppWheel SDK can restore product information
+- Whether the initialization interface is called at startup
+- Whether the AppWheel SDK can get the information of purchased products
+- Subscription Products
+- Discount products (optional)
+- Discount for new users
+- Promotion offer
+- Coupon
+- Consumable products
+- Non-consumable products
+- Non-renewable products
+- Whether the AppWheel SDK can restore product information
 
 ### Other steps: Integration of advanced features
 #### Voucher machine
@@ -157,24 +157,24 @@ To Google Cloud Platform:
 [Adding a Global Listener](/Adding_a_Global_Listener)
 
 ### Step 4: Acceptance Inspection
-- □ App Configuration Check
-- □ To make sure a notification is configured successfully: Check if the Google Cloud Pub/Sub queue has notification settings
+- App Configuration Check
+- To make sure a notification is configured successfully: Check if the Google Cloud Pub/Sub queue has notification settings
 
 
 ![pubSub](/img/integration/pubSub.png)
 
-- □ The basic configuration is as follows
+- The basic configuration is as follows
 
 ![androidSetting](/img/integration/androidSetting.png)
 
-- □ Whether the initialization interface is called at startup
-- □ Whether the AppWheel SDK can get the information of purchased products
-- □ Subscription Products
-- □ In-App Products
-- □ Discount products (optional)
-- □ Single Payment Products
-- □ Recurring Payment Products
-- □ Whether the AppWheel SDK can restore product information
+- Whether the initialization interface is called at startup
+- Whether the AppWheel SDK can get the information of purchased products
+- Subscription Products
+- In-App Products
+- Discount products (optional)
+- Single Payment Products
+- Recurring Payment Products
+- Whether the AppWheel SDK can restore product information
 ### Other steps: Integration of advanced features
 
 import Tabs from '@theme/Tabs';

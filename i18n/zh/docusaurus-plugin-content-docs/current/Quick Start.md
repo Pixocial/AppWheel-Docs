@@ -86,28 +86,28 @@ import <PurchaseSDK/AWPurchaseKit.h>
 
 
 ### 第五步：验收检查
-- □App 配置检查
-	- □通知是否配置成功：检查 AppStoreConnect 后台的配置
+- App 配置检查
+- 通知是否配置成功：检查 AppStoreConnect 后台的配置
 
 ![Overall Process](/img/integration/appStoreConnectBackend-zh.png)
 
-	- □ App设置如下
+- App设置如下
 
 ![Overall Process](/img/integration/appConfiguration.png)
 
 ![Overall Process](/img/integration/addP8File.png)
 
-- □是否在启动时调用了初始化接口
-- □是否能通过 appwheel sdk 获取购买的商品信息
-	- □订阅商品
-		- □优惠商品（选填）
-			- □新用户推介促销优惠
-			- □促销优惠
-			- □优惠码优惠
-		- □消耗商品
-		- □非消耗商品
-		- □非续期订阅商品
-- □是否能通过 appwheel sdk 恢复商品信息
+- 是否在启动时调用了初始化接口
+- 是否能通过 appwheel sdk 获取购买的商品信息
+- 订阅商品
+- 优惠商品（选填）
+- 新用户推介促销优惠
+- 促销优惠
+- 优惠码优惠
+- 消耗商品
+- 非消耗商品
+- 非续期订阅商品
+- 是否能通过 appwheel sdk 恢复商品信息
 
 ### 其它步骤：对接高级功能
 #### 发券机
@@ -178,23 +178,23 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 [添加全局监听](/Adding_a_Global_Listener)
 
 ### 第四步：验收检查
-- □App 配置检查
-	- □通知是否配置成功：检查 Google Cloud Pub/Sub 队列是否有推送设置
+- App 配置检查
+- 通知是否配置成功：检查 Google Cloud Pub/Sub 队列是否有推送设置
 
 
 ![pubSub](/img/integration/pubSub-zh.png)
 
-- □基础配置如下
-- 
+- 基础配置如下
+
 ![androidSetting](/img/integration/androidSetting.png)
 
-- □ 是否在启动时调用了初始化接口
-- □ 是否能通过 appwheel sdk 获取购买的商品信息
-	- □ 订阅商品
-	- □ 应用内商品
-	- □ 优惠商品（选填）
-		- □ SinglePayment商品
-		- □ Recurring Payment商品
-- □ 是否能通过 appwheel sdk 恢复商品信息
+- 是否在启动时调用了初始化接口
+- 是否能通过 appwheel sdk 获取购买的商品信息
+- 订阅商品
+- 应用内商品
+- 优惠商品（选填）
+- SinglePayment商品
+- Recurring Payment商品
+- 是否能通过 appwheel sdk 恢复商品信息
 ### 其它步骤：对接高级功能
 
