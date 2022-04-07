@@ -16,3 +16,7 @@ import <PurchaseSDK/AWPurchaseKit.h>
 ```
 
 >   <font color="red">**注：本SDK暂时只支持真机，不支持模拟器**</font> 
+
+
+### 下一步
+[配置SDK](/ConfiguringTheSDK/iOS.md)

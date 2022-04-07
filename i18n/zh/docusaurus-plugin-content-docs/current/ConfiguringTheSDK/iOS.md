@@ -66,3 +66,7 @@ AWPurchaseKit.configure(withAppId: appId,
 *  `uid`: userId，没有可传空字符串
 *  `completion`: 初始化结果的block，如果初始化成功block中的返回true，如果错误返回false，在配置失败的情况下无法正常使用本组件
 
+
+### 下一步
+
+[请求商品](/DisplayingProducts/iOS.md)

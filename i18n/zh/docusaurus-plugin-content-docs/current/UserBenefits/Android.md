@@ -33,3 +33,6 @@ kotlin:
 val recentSubsPurchase = UserOrderManager.getProvider().recentSubsPurchase
 ```
 
+### 下一步
+
+[添加全局监听](/Adding_a_Global_Listener)

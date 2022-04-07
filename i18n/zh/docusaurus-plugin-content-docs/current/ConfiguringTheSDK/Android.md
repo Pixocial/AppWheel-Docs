@@ -50,4 +50,8 @@ Billing.configure(context ,"appid" , secret, appUserId , listener)
 - listener: 初始化的监听，可传空，在初始化之后会通过监听返回回调结果通过
 `onBillingSetupFinished`方法
 
- ```
+
+
+### 下一步
+
+[请求商品](/DisplayingProducts/Android.md)

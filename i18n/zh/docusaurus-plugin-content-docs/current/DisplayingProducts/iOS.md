@@ -46,3 +46,7 @@ AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] 
 `productIdentifiers`:sku的id的set集合
 ### 返回：
 `RetrievedProducts`结构包含成功获取的商品`AWProduct`数组，获取失败的商品SKU数组，以及`AWError`对象
+
+### 下一步
+
+[购买](/MakingPurchases/iOS.md)

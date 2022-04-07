@@ -34,3 +34,6 @@ apply plugin: 'com.google.gms.google-services'
 implementation 'com.github.pixocial:purchases:1.xxx'
 
 ```
+### Next Steps
+
+[Configuring The SDK](/ConfiguringTheSDK/Android)

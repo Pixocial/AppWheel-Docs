@@ -41,3 +41,8 @@ Market.getInstance().getProductsInfo(itemType, skuList, object : OnQueryProductL
 - skuList ：sku的id的set集合
 返回：
 当请求成功时会通过`onSuccess`方法返回Product的集合
+
+
+### 下一步
+
+[购买](/MakingPurchases/Android.md)

@@ -47,3 +47,9 @@ AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] 
  productIdentifiers: Collection of SKU IDs.
 ### Return:
  The RetrievedProducts returned includes AWProduct array of successfully obtained products, SKU array of products failed to be obtained and AWError objects.
+
+
+
+### Next Steps
+
+[Making Purchases](/MakingPurchases/iOS.md)

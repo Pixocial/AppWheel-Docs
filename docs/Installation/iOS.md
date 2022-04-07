@@ -14,3 +14,7 @@ The latest version can be obtained through the official website or by executing 
 import <PurchaseSDK/AWPurchaseKit.h>
 ```
 >   <font color="red">**Note: This SDK only supports the real machine rather than a simulator for the time being.**</font> 
+
+### Next Steps
+
+[Configuring The SDK](/ConfiguringTheSDK/iOS)

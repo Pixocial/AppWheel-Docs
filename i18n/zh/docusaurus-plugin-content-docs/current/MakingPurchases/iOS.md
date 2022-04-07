@@ -42,3 +42,8 @@ AWPurchaseKit.purchaseProduct(product,
 * `paymentDiscount`：折扣，只有订阅商品有,通过Product.discounts获取，没有可传nil
 *  `quantity`: 购买数量，订阅商品的数量是1，其他类型的商品通常也都是1
 *  `productType`:商品类型：用户自己根据sku来判断类型，类型有四种：(0:消耗型商品   、1:非消耗型商品  、2:自动续期订阅 、3:非自动学期订阅)
+
+
+### 下一步
+
+[恢复购买](/Restoring_Purchases)

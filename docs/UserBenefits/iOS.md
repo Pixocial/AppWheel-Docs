@@ -64,3 +64,7 @@ AWPurchaseKit.getPurchaseInfo().purchasedArray()
 ```
   </TabItem>
 </Tabs>
+
+### Next Steps
+
+[Adding a Global Listener](/Adding_a_Global_Listener)

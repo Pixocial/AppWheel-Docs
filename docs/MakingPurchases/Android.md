@@ -95,3 +95,7 @@ Market.getInstance().consumePurchaseFlow(purchase, object : ConsumeResponseListe
 
 #### Parameters:
 - purchase: MTGPurchase type. Please choose the corresponding purchase value according to the products you need.
+
+### Next Steps
+
+[Restoring Purchases](/Restoring_Purchases)

@@ -44,3 +44,7 @@ Market.getInstance().getProductsInfo(itemType, skuList, object : OnQueryProductL
 - skuList : Collection of SKU IDs.
  Return:
 When the request is successful, the collection of Products will be returned through the onSuccess method.
+
+### Next Steps
+
+[Making Purchases](/MakingPurchases/Android.md)

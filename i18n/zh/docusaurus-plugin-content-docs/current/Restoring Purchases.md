@@ -24,6 +24,10 @@ Market.getInstance().restorePurchase(new OnRestorePurchaseListener() {
     }
 });
 ```
+
+### 下一步
+
+[获取用户权益](/UserBenefits/Android.md)
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
@@ -35,6 +39,11 @@ Market.getInstance().restorePurchase(object : OnRestorePurchaseListener {
     }
 })
 ```
+
+### 下一步
+
+[获取用户权益](/UserBenefits/Android.md)
+
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
 
@@ -46,6 +55,10 @@ Market.getInstance().restorePurchase(object : OnRestorePurchaseListener {
     //do something
   }];
 ```
+
+### 下一步
+
+[获取用户权益](/UserBenefits/iOS.md) 
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
@@ -54,5 +67,9 @@ AWPurchaseKit.restorePurchase { (success, validSubscriptions, productIds, error)
       //do something
       }
 ```
+
+### 下一步
+
+[获取用户权益](/UserBenefits/iOS.md) 
   </TabItem>
 </Tabs>

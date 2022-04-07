@@ -95,3 +95,9 @@ Market.getInstance().consumePurchaseFlow(purchase, object : ConsumeResponseListe
 
 #### 参数：
 - purchase: MTGPurchase类型，开发者应该根据自己需要消耗的商品选择对应的purchase
+
+
+
+### 下一步
+
+[恢复购买](/Restoring_Purchases)

@@ -36,3 +36,8 @@ apply plugin: 'com.google.gms.google-services'
 
 implementation 'com.github.pixocial:purchases:1.xxx'
  ```
+
+
+### 下一步
+
+[配置SDK](/ConfiguringTheSDK/Android.md)

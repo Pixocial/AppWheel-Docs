@@ -48,3 +48,7 @@ Billing.configure(context ,"appid" , secret, appUserId , listener)
 - uid: userId value should not be empty.
 - listener: Initialized listener, which can be empty value. After initialization, the callback result will be successfully returned.
  onBillingSetupFinished method
+
+### Next Steps
+
+[Displaying Products](/DisplayingProducts/Android.md)

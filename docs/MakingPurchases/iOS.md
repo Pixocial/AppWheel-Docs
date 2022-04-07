@@ -45,3 +45,7 @@ AWPurchaseKit.purchaseProduct(product,
 - quantity: The quantity of purchases. The quantity of subscription products is 1, as is other product types.
 - productType: Product types, which can be determined according to the SKU. There are four product types: (0: Consumable product, 1: Non-consumable product, 2: Auto-renewal subscription, and 3: Non-automatic renewal subscription)
 
+
+### Next Steps
+
+[Restoring Purchases](/Restoring_Purchases)
