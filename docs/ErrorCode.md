@@ -1,42 +1,38 @@
 ---
-sidebar_position: 10
-title: Error Code
-id: Error Code
+sidebar_position: 10 title: Error Code id: Error Code
 ---
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="Android" label="Android" default>
 
 ```java
-int SERVICE_TIMEOUT = -3;
-int FEATURE_NOT_SUPPORTED = -2;
-int SERVICE_DISCONNECTED = -1;
-int OK = 0;
-int USER_CANCELED = 1;
+int SERVICE_TIMEOUT=-3;
+        int FEATURE_NOT_SUPPORTED=-2;
+        int SERVICE_DISCONNECTED=-1;
+        int OK=0;
+        int USER_CANCELED=1;
 //The service is not available/not supported
-int SERVICE_UNAVAILABLE = 2;
-int BILLING_UNAVAILABLE = 3;
-int ITEM_UNAVAILABLE = 4;
-int DEVELOPER_ERROR = 5;
-int ERROR = 6;
-int ITEM_ALREADY_OWNED = 7;
-int ITEM_NOT_OWNED = 8;
+        int SERVICE_UNAVAILABLE=2;
+        int BILLING_UNAVAILABLE=3;
+        int ITEM_UNAVAILABLE=4;
+        int DEVELOPER_ERROR=5;
+        int ERROR=6;
+        int ITEM_ALREADY_OWNED=7;
+        int ITEM_NOT_OWNED=8;
 
 //Backend verification request exception
-int SERVER_VERIFY_ERROR = 100;
+        int SERVER_VERIFY_ERROR=100;
 // Order failed the backend verification (illegal order)
-int SERVER_VERIFY_PURCHASE_NO_PERMISSION = 101;
+        int SERVER_VERIFY_PURCHASE_NO_PERMISSION=101;
 // User linking in the backend failed
-int SERVER_USER_NOT_ATTACH = 103;
+        int SERVER_USER_NOT_ATTACH=103;
 ```
 
   </TabItem>
   <TabItem value="iOS" label="iOS">
-
 
 ```Object-C
 
@@ -93,17 +89,15 @@ int SERVER_USER_NOT_ATTACH = 103;
   </TabItem>
   <TabItem value="Stripe" label="Stripe">
 
-```Object-C
-
-     ErrAwPurchaseSkuIncomplete = 205001
-     ErrAwPurchaseStripeApi = 205002
-     ErrAwPurchaseSameGroupProduct = 205003
-     ErrAwPurchaseUserIncomplete = 205004
-     ErrAwPurchaseOrderNotExist = 205005
-     ErrAwPurchaseCheckoutNotExist = 205006
-     ErrAwPurchaseSkuNotSameGroup = 205007
-     
-```
+|  Error Code   | Message  |    Suggestions|
+|  ----  | ----  | ---- |
+| 205001  | ErrAwPurchaseSkuIncomplete | complete sku info |
+| 205002  | ErrAwPurchaseStripeApi | goto  [Stripe Error](https://stripe.com/docs/error-codes)  |
+| 205003  | ErrAwPurchaseSameGroupProduct | select another sku  |
+| 205004  | ErrAwPurchaseUserIncomplete | init user before |
+| 205005  | ErrAwPurchaseOrderNotExist | check orderId |
+| 205006  | ErrAwPurchaseCheckoutNotExist | None |
+| 205007  | ErrAwPurchaseSkuNotSameGroup | select another sku  |
 
   </TabItem>
 </Tabs>
