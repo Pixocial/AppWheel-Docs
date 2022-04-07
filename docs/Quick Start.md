@@ -48,7 +48,28 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 - There's already a product configuration
 - No product configuration
 
-### Step 3: Install the SDK
+### Step 3: Setting up the Installation Environment
+
+#### Requirements iOS 10.0 and above
+
+#### CocoaPods
+Our SDK is managed by [Cocoapods]( https://cocoapods.org/). Before installing the SDK, make sure CocoaPods is properly installed, and you have successfully compiled and run your project on it. Once you have used CocoaPods to compile and run your project, there will be a Podfile document; add the following to the Podfile:
+
+```Objective-C
+pod 'AppWheel'
+```
+
+Please find the latest release on our official website, or via command: pod search AppWheel
+
+#### Import Bridging-Header.h
+
+A pure Swift project needs you to [import Objective-C into Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift). Then you will see a Bridging-Header.h file in your project. Add the following to Bridging-Header.h in order to use our SDK:
+
+```Objective-C
+import <PurchaseSDK/AWPurchaseKit.h>
+```
+
+### Step 4: Install the SDK
 
 [SDK Installation](/Installation/iOS.md)
 
@@ -64,7 +85,7 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 
 [Adding a Global Listener](/Adding_a_Global_Listener)
 
-### Step 4: Acceptance Inspection
+### Step 5: Acceptance Inspection
 - App Configuration Check
 - Whether the notification is configured successfully: Check the configuration in the AppStoreConnect backend
 

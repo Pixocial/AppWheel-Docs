@@ -9,6 +9,7 @@ pod 'AppWheel'
 ```
 
 最新版本请执行：pod search AppWheel 获得
+
 所有方法支持Swift调用，请在Bridging-Header文件中添加语句
 
 ```Objective-C
