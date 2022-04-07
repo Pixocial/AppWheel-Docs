@@ -45,8 +45,8 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 **Service Account credentials JSON:** A file with a .p8 suffix, commonly called a p8 file. When you need to enable the subscription discount function, you need to have a signature for the discount, and the p8 file is an essential key to generate this signature. Obtain it through: [https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
 
 #### Product Configuration
-▪ There's already a product configuration
-▪ No product configuration
+- There's already a product configuration
+- No product configuration
 
 ### Step 3: Install the SDK
 
@@ -137,8 +137,8 @@ To Google Cloud Platform:
 ▪ After the configuration is complete, you can test the availability of the address. The configuration must be consistent with the requirements, that is, accept the request of the POST method, return 200 Http status code after successful processing, and return 400 or 500 status code when processing fails. In addition, because there is no actual business data body in the test, the 200 http status code can be returned when empty data is received.
 
 #### Product Configuration
-##### There's already a product configuration
-##### No product configuration
+- There's already a product configuration
+- No product configuration
 
 ### Step 3: Install the SDK
 
