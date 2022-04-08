@@ -13,7 +13,7 @@ pod 'AppWheel'
 所有方法支持Swift调用，请在Bridging-Header文件中添加语句
 
 ```Objective-C
-import <PurchaseSDK/AWPurchaseKit.h>
+#import <PurchaseSDK/AWPurchaseKit.h>
 ```
 
 >   <font color="red">**注：本SDK暂时只支持真机，不支持模拟器**</font> 

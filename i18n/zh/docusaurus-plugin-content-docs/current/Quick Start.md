@@ -65,7 +65,7 @@ pod 'AppWheel'
 #### 添加Bridging-Header.h
 如果您的项目是纯swift的项目，那么您需要[把Objective-C引入Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift)  ，当您完成了把Objective-C引入Swift之后，在您的项目中应该有一个Bridging-Header.h文件，在Bridging-Header.h中添加以下代码，就可以在项目中使用本SDK了
 ```Objective-C
-import <PurchaseSDK/AWPurchaseKit.h>
+#import <PurchaseSDK/AWPurchaseKit.h>
 ```
 
 ### 第四步：安装SDK

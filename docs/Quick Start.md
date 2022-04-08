@@ -66,7 +66,7 @@ Please find the latest release on our official website, or via command: pod sear
 A pure Swift project needs you to [import Objective-C into Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift). Then you will see a Bridging-Header.h file in your project. Add the following to Bridging-Header.h in order to use our SDK:
 
 ```Objective-C
-import <PurchaseSDK/AWPurchaseKit.h>
+#import <PurchaseSDK/AWPurchaseKit.h>
 ```
 
 ### Step 4: Install the SDK
