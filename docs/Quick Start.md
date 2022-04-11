@@ -53,21 +53,11 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 #### Requirements iOS 10.0 and above
 
 #### CocoaPods
-Our SDK is managed by [Cocoapods]( https://cocoapods.org/). Before installing the SDK, make sure CocoaPods is properly installed, and you have successfully compiled and run your project on it. Once you have used CocoaPods to compile and run your project, there will be a Podfile document; add the following to the Podfile:
-
-```Objective-C
-pod 'AppWheel'
-```
-
-Please find the latest release on our official website, or via command: pod search AppWheel
+This SDK is hosted in [Cocoapods]( https://cocoapods.org/). please make sure you have installed Cocoapods and your project has been compiled and run successfully with Cocoapods before installing this SDK. If your project has been compiled and run successfully with Cocoapods and you can find Podfile in your project.
 
 #### Import Bridging-Header.h
 
-A pure Swift project needs you to [import Objective-C into Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift). Then you will see a Bridging-Header.h file in your project. Add the following to Bridging-Header.h in order to use our SDK:
-
-```Objective-C
-#import <PurchaseSDK/AWPurchaseKit.h>
-```
+If your project is a Swift project, then you need to [import Objective-C into Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift). You can find the Bridging-Header.h file in your project after importing. 
 
 ### Step 4: Install the SDK
 
