@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-///Please use the following method for versions older than 2.0.1.3.  
+///Please use the following method for versions older than 2.0.2.1.  
 AWPurchaseKit configureWithAppId:appid 
                              uid:userId     
                       completion:^(BOOL success, AWError * _Nonnull error) {
@@ -19,7 +19,7 @@ AWPurchaseKit configureWithAppId:appid
     }
   }
   
-  ///Use the following method for version 2.0.1.3 and above.  
+  ///Use the following method for version 2.0.2.1 and above.  
 [AWPurchaseKit configureWithAppId:appId 
                            secret:appSecret
                               uid:userId
@@ -35,7 +35,7 @@ AWPurchaseKit configureWithAppId:appid
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-///Please use the following method for versions older than 2.0.1.3.  
+///Please use the following method for versions older than 2.0.2.1.  
 AWPurchaseKit.configure(withAppId: appId, 
                               uid: uid) { [weak self](success, error) in
       if success == false {
@@ -45,7 +45,7 @@ AWPurchaseKit.configure(withAppId: appId,
       }
     }
     
- ///Use the following method for version 2.0.1.3 and above.
+ ///Use the following method for version 2.0.2.1 and above.
  AWPurchaseKit.configure(withAppId: appId, 
                             secret:appSecret 
                                uid: uid) { [weak self](success, error) in
@@ -62,7 +62,7 @@ AWPurchaseKit.configure(withAppId: appId,
 
 ### 参数：
 *  `appId`: 由AW的服务器生成，生成步骤请见文档：新建应用（外部版） 
-*  `secret`: V2.0.1.3版本新增，由AW的服务器生成，生成步骤请见文档：新建应用（外部版） 
+*  `secret`: V2.0.2.1版本新增，由AW的服务器生成，生成步骤请见文档：新建应用（外部版） 
 *  `uid`: userId，没有可传空字符串
 *  `completion`: 初始化结果的block，如果初始化成功block中的返回true，如果错误返回false，在配置失败的情况下无法正常使用本组件
 
