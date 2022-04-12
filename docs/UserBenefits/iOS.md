@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getPurchaseInfo] isSubscriptionUnlockedUser]
+[[AWPurchaseKit getPurchaseInfo] isSubscriptionUnlockedUser];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
@@ -34,7 +34,7 @@ AWPurchaseKit.getPurchaseInfo().isSubscriptionUnlockedUser()
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getPurchaseInfo] getCurrentValidSubscriptions]
+[[AWPurchaseKit getPurchaseInfo] getCurrentValidSubscriptions];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
@@ -54,7 +54,7 @@ AWPurchaseKit.getPurchaseInfo().getCurrentValidSubscriptions()
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getPurchaseInfo] purchasedArray]
+[[AWPurchaseKit getPurchaseInfo] purchasedArray];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">

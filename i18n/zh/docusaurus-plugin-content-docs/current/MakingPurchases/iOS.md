@@ -8,31 +8,32 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
+
 [AWPurchaseKit purchaseProduct:product 
                       quantity:quantity 
-                   AWProducts 
-               paymentDiscount:paymentDiscount completion:^(BOOL success, AWError * _Nonnull error) {
+                   productType:productType 
+               paymentDiscount:paymentDiscount 
+                    completion:^(BOOL success, AWError * _Nonnull error) {
                 if (!success) {
                   //purchase failed, check error
                 }else {
                   //purchase success
                 }
-          }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.purchaseProduct(product, 
-                     quantity: 1, 
-                  productType: AWProductType, 
-              paymentDiscount: nil) { success, error in
-        if success {
-          //purchase success
-        } else {
-          //purchase failed, check error
-        }
-      }
+
+AWPurchaseKit.purchaseProduct(product, quantity: quantity, productType: productType, paymentDiscount: nil) { success, error in
+
+    if (!success) {
+      //purchase failed, check error
+      return
+    }
+    //purchase success  
+}
 ```
   </TabItem>
 </Tabs>
@@ -41,7 +42,8 @@ AWPurchaseKit.purchaseProduct(product,
 *  `product:` 商品
 * `paymentDiscount`：折扣，只有订阅商品有,通过Product.discounts获取，没有可传nil
 *  `quantity`: 购买数量，订阅商品的数量是1，其他类型的商品通常也都是1
-*  `productType`:商品类型：用户自己根据sku来判断类型，类型有四种：(0:消耗型商品   、1:非消耗型商品  、2:自动续期订阅 、3:非自动学期订阅)
+*  `productType`:商品类型：用户自己根据sku来判断类型，类型有四种：(AWProductTypeConsumable:消耗型商品   、AWProductTypeNonConsumable:非消耗型商品  、
+                  AWProductTypeAutoRenewable:自动续期订阅 、AWProductTypeNonRenewable:非自动续期订阅)
 
 
 ### 下一步

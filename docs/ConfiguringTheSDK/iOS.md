@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 ```Objective-C 
 ///Please use the following method for versions older than 2.0.2.1.  
-AWPurchaseKit configureWithAppId:appid 
+[AWPurchaseKit configureWithAppId:appid 
                              uid:userId     
                       completion:^(BOOL success, AWError * _Nonnull error) {
     if (success) {
@@ -18,7 +18,7 @@ AWPurchaseKit configureWithAppId:appid
     } else {
       // init failed,check error
     }
-  }
+}];
   
   ///Use the following method for version 2.0.2.1 and above.  
 [AWPurchaseKit configureWithAppId:appId 
@@ -38,24 +38,24 @@ AWPurchaseKit configureWithAppId:appid
 ```Swift
 ///Please use the following method for versions older than 2.0.2.1.  
 AWPurchaseKit.configure(withAppId: appId, 
-                              uid: uid) { [weak self](success, error) in
+                              uid: uid) { success, error in
       if success == false {
         // init failed,check error
       } else {
         //init success ,do something
       }
-    }
+}
     
  ///Use the following method for version 2.0.2.1 and above.
  AWPurchaseKit.configure(withAppId: appId, 
                             secret:appSecret 
-                               uid: uid) { [weak self](success, error) in
+                               uid: uid) { success, error in
       if success == false {
         // init failed,check error
       } else {
         //init success ,do something
       }
-    }
+}
 ```
   </TabItem>
 </Tabs>

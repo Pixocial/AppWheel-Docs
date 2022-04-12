@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[AWPurchaseKit getProductsInfoWithProductIdentifiers:self.skuSet 
+[AWPurchaseKit getProductsInfoWithProductIdentifiers:productSet 
                                           completion:^(RetrievedProducts * _Nonnull retrievedProducts) {
       if (retrievedProducts.error) {
        // request error,check error msg
@@ -30,20 +30,25 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] (result) in
-          if let error = result.error {
-            //request error,check error msg
-          } else {
-            let valid_products = result.validProducts
-            //request success, updateUI
-          }
-  }
+
+  AWPurchaseKit.getProductsInfo(withProductIdentifiers: productSet) { retrievedProducts in
+              if let error = result.error {
+                //request error,check error msg
+                return
+              }
+                
+              if retrievedProducts.validProducts.count > 0 {
+                    let productList = retrievedProducts.validProducts
+              }
+              //request success, updateUI
+
+            }
 ```
   </TabItem>
 </Tabs>
 
 ### 参数：
-`productIdentifiers`:sku的id的set集合
+`productSet`:sku的id的set集合
 ### 返回：
 `RetrievedProducts`结构包含成功获取的商品`AWProduct`数组，获取失败的商品SKU数组，以及`AWError`对象
 

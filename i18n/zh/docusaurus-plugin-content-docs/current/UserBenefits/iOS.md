@@ -8,7 +8,7 @@
 Objective-C:
 
 ```Objective-C
-[[AWPurchaseKit getPurchaseInfo] isSubscriptionUnlockedUser]
+[[AWPurchaseKit getPurchaseInfo] isSubscriptionUnlockedUser];
 ```
 
 Swift:
@@ -24,7 +24,7 @@ AWPurchaseKit.getPurchaseInfo().isSubscriptionUnlockedUser()
 Objective-C:
 
 ```Objective-C
-[[AWPurchaseKit getPurchaseInfo] getCurrentValidSubscriptions]
+[[AWPurchaseKit getPurchaseInfo] getCurrentValidSubscriptions];
 ```
 
 Swift:
@@ -40,7 +40,7 @@ AWPurchaseKit.getPurchaseInfo().getCurrentValidSubscriptions()
 Objective-C:
 
 ```Objective-C
-[[AWPurchaseKit getPurchaseInfo] purchasedArray]
+[[AWPurchaseKit getPurchaseInfo] purchasedArray];
 ```
 
 Swift:

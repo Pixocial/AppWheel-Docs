@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[AWPurchaseKit getProductsInfoWithProductIdentifiers:self.skuSet 
+[AWPurchaseKit getProductsInfoWithProductIdentifiers:productSet
                                           completion:^(RetrievedProducts * _Nonnull retrievedProducts) {
       if (retrievedProducts.error) {
        // request error,check error msg
@@ -31,20 +31,27 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.getProductsInfo(withProductIdentifiers: productIds) { [weak self] (result) in
-          if let error = result.error {
-            //request error,check error msg
-          } else {
-            let valid_products = result.validProducts
-            //request success, updateUI
-          }
+  AWPurchaseKit.getProductsInfo(withProductIdentifiers: productSet) { retrievedProducts in
+              if let error = result.error {
+                //request error,check error msg
+                return
+              }
+                
+              if retrievedProducts.validProducts.count > 0 {
+                    let productList = retrievedProducts.validProducts
+              }
+              //request success, updateUI
+
   }
 ```
   </TabItem>
 </Tabs>
   
+
+
 ### Parameters:
- productIdentifiers: Collection of SKU IDs.
+
+ productSet: Set of SKU IDs.
 ### Return:
  The RetrievedProducts returned includes AWProduct array of successfully obtained products, SKU array of products failed to be obtained and AWError objects.
 

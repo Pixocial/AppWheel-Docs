@@ -44,7 +44,7 @@ UserOrderManager.getProvider().removePurchaseObserver(orderObserver)
 ///Adding a listener
 [AWPurchaseKit addPurchaseObserver:AWPurchaseObserver];
 ///Remove listener
-[AWPurchaseKit removePurchaseObserver:self]
+[AWPurchaseKit removePurchaseObserver:self];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
