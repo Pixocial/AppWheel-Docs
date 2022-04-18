@@ -1,5 +1,34 @@
-## docusaurus文档上传指南
 
+## 前期准备
+
+### git操作
+
+- 使用[git](https://git-scm.com/) 下载代码
+- 打开控制台，进入到需要放工程的目录
+- 输入命令: git clone https://github.com/Pixocial/AppWheel-Docs.git
+- 得到工程代码 AppWheel-Docs 的文件夹
+- 提交代码：`git add . && git commit -m "描述一下这次的修改" && git push`
+	- 网页提交 PullRequest
+- 注意事项
+    - 每次编辑前，先更新代码: `git pull`
+ 
+- 翻译完成后审核
+    - 提交分支
+    - 审核人员拉取分支
+    - 审核人员切换到待审核分支
+    - 审核人员运行代码看效果
+    - 审核通过，提交人员提交合并
+
+### MD文档编辑
+#### 工具
+- [Typora](https://typora.io/)
+- [MacDown](https://macdown.uranusjr.com/)
+
+#### 语法
+[MD语法](https://www.cnblogs.com/liugang-vip/p/6337580.html)
+
+
+## docusaurus文档上传指南
 
 ### 第一步：上传文件到指定位置
 
@@ -9,7 +38,7 @@
 
 如果需要分组展示，可以放在不同的文件夹下，文件夹名即为分组标题名
 
-### 第二步：修改md文件索引
+### 第二步：修改md文件的顺序
 
 md文件被识别需要添加一个头部说明,使用`---`符号上下包裹
 
@@ -40,7 +69,12 @@ id: AppWheel-SDK-Integration-Document
 
 ### 第四步：运行项目检查效果（可选，非技术人员可在技术人员指导下完成）
 
-clone项目后在项目根目录输入 `yarn` 安装依赖
+#### 环境安装
+- yarn 安装
+      - 打开 Terminal.app
+       - yarn 安装: `npm install --global yarn`
+
+安装了yarn之后在项目根目录输入 `yarn` 安装依赖
 
 随后使用 `yarn start` 运行项目
 
