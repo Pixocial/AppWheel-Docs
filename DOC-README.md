@@ -5,7 +5,7 @@
 
 英文版md文件上传至.\AppWheel-Docs\docs
 
-多语言版本以法语为例（fr）上传至.\AppWheel-Docs\i18n\fr\docusaurus-plugin-content-docs下与英文版相同的位置
+多语言版本以中文为例（zh）上传至.\AppWheel-Docs\i18n\zh\docusaurus-plugin-content-docs/current下与英文版相同的位置
 
 如果需要分组展示，可以放在不同的文件夹下，文件夹名即为分组标题名
 
@@ -38,7 +38,7 @@ id: AppWheel-SDK-Integration-Document
 ![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
 ```
 
-### 第四步：运行项目检查效果（可选）
+### 第四步：运行项目检查效果（可选，非技术人员可在技术人员指导下完成）
 
 clone项目后在项目根目录输入 `yarn` 安装依赖
 
@@ -54,6 +54,9 @@ clone项目后在项目根目录输入 `yarn` 安装依赖
 
 #### 文件
 新建文件的名字也是不要使用其他符号
+
+### 第六步：新文档暂时不想发版时
+当你只写中文文档，英文文档暂时没有返回时，又不想文档随便乱丢导致后期不好找，可以先放到\AppWheel-Docs\i18n\目录下，这样子是不会被发版到线上的
 
 
 

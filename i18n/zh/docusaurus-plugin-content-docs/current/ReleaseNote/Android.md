@@ -1,5 +1,15 @@
 ### Latest SDK versions
 
+
+#### Update - Apr 15,2022
+##### version 1.0.10.0
+- 添加跨端支付的订单请求接口
+
+
+#### Update - Apr 13,2022
+##### version 1.0.9.0
+- 修复特殊字符导致的上报商品信息错误
+
 #### Update - Apr 2,2022
 ##### version 1.0.8.0
 - 添加了订阅搭建工具的原生界面
