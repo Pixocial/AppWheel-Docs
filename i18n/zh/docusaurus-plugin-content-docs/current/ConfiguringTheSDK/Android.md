@@ -46,9 +46,8 @@ Billing.configure(context ,"appid" , secret, appUserId , listener)
 ### 参数：
 - appId: 由AW生成，生成步骤请见文档：新建应用（外部版） 
 - secret: V1.0.5.6版本新增，由AW生成，生成步骤请见文档：新建应用（外部版） 
-- uid: userId，没有可传空字符串
-- listener: 初始化的监听，可传空，在初始化之后会通过监听返回回调结果通过
-`onBillingSetupFinished`方法
+- appUserId: userId，请不要使用特殊字符，如：'[` ~! @ # $% ^ & * () + = | {} ':', \ \ [\ \] < > /? ~! @ # $%... & * () - + | {} 【 】 '; : "",.,?]'，使用特殊字符可能导致无法预估的问题。没有userId可传空字符串
+- listener: 初始化的监听，可传空，在初始化之后会通过监听返回回调结果通过`onBillingSetupFinished`方法
 
 
 
