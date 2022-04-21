@@ -4,7 +4,8 @@ title: Query Stripe Orders
 id: Query Stripe Orders
 ---
 
-当有需要使用到跨端支付功能的时候，可以通过该接口来获取跨端支付的订单
+
+When cross-end payment is needed, use this interface to query orders.
 
  
 import Tabs from '@theme/Tabs';
@@ -17,7 +18,7 @@ import TabItem from '@theme/TabItem';
         Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener() {
             @Override
             public void onSuccess(StripePurchaseInfo info) {
-              //拿到订单数据
+              //Get order information
               List<StripeOrderModel> list = info.subscriberOrders;
             }
 
@@ -34,7 +35,7 @@ import TabItem from '@theme/TabItem';
         Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener() {
             @Override
             public void onSuccess(StripePurchaseInfo info) {
-              //拿到订单数据
+              //Get order information
               List<StripeOrderModel> list = info.subscriberOrders;
             }
 
