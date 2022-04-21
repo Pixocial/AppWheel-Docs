@@ -14,5 +14,23 @@
   "sidebar.tutorialSidebar.category.AppWheel": {
     "message": "AppWheel",
     "description": "The label for category AppWheel in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Common Errors": {
+    "message": "常见问题"
+  },
+  "sidebar.tutorialSidebar.category.Configuring the SDK": {
+    "message": "初始化配置"
+  },
+  "sidebar.tutorialSidebar.category.Displaying Products": {
+    "message": "展示商品"
+  },
+  "sidebar.tutorialSidebar.category.Installation": {
+    "message": "安装"
+  },
+  "sidebar.tutorialSidebar.category.Making Purchases": {
+    "message": "购买"
+  },
+  "sidebar.tutorialSidebar.category.User Benefits": {
+    "message": "用户权益"
   }
 }

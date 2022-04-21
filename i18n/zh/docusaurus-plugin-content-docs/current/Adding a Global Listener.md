@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: Adding a Global Listener
+title: 添加全局监听
 id: Adding_a_Global_Listener
 ---
 

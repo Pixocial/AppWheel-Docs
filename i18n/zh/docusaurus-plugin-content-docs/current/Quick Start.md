@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-title: Quick Start
+title: 快速开始
 id: AppWheel-SDK-Integration
 slug: /
 ---

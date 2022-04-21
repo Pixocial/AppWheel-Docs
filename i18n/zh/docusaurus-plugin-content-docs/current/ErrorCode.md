@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10 
-title: Error Code 
+title: 错误码 
 id: Error Code
 ---
 

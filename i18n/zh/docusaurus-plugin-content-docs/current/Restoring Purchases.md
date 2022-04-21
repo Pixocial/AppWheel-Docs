@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: Restoring Purchases
+title: 恢复购买
 id: Restoring_Purchases
 ---
 
@@ -53,7 +53,7 @@ Market.getInstance().restorePurchase(object : OnRestorePurchaseListener {
                                             NSArray * purchasedItems, 
                                             AWError * error) {
     //do something
-  }];
+}];
 ```
 
 ### 下一步
@@ -65,7 +65,8 @@ Market.getInstance().restorePurchase(object : OnRestorePurchaseListener {
 ```Swift
 AWPurchaseKit.restorePurchase { (success, validSubscriptions, productIds, error) in
       //do something
-      }
+}
+      
 ```
 
 ### 下一步

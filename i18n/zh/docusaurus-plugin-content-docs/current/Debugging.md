@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-title: Debugging
+title: 调试
 id: Debugging
 ---
 
