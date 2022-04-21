@@ -93,4 +93,15 @@ id: AppWheel-SDK-Integration-Document
 当你只写中文文档，英文文档暂时没有返回时，又不想文档随便乱丢导致后期不好找，可以先放到\AppWheel-Docs\i18n\目录下，这样子是不会被发版到线上的
 
 
+### 第六步：修改标题的多语言
+找到改语言文件夹下的current.json文件，例如中文的路径为：i18n/zh/docusaurus-plugin-content-docs/current.json,在里面添加对应的翻译文案
+
+```json
+"sidebar.tutorialSidebar.category.Common Errors": {
+    "message": "常见问题"
+  
+```
+其中“Common Errors”为CommonErrors文件夹下的_category_.json里面的label对应的名称，也是英文版的标题名称。“message”为对应要修改的翻译.
+
+
 
