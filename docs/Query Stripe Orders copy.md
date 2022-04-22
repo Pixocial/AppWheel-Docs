@@ -5,7 +5,7 @@ id: Query Stripe Orders
 ---
 
 
-When cross-end payment is needed, use this interface to query orders.
+When cross-platform payment is needed, use this interface to query orders.
 
  
 import Tabs from '@theme/Tabs';
