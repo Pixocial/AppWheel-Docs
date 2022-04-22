@@ -156,7 +156,8 @@ Response:
 }
 ```
 
-## 在移动端通过SDK请求得到跨端支付的订单
+## 在SDK中获取订单
+以下是通过SDK获取跨端支付订单的方法
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
