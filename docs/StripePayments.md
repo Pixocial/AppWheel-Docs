@@ -29,7 +29,7 @@ Copy the WebHook URL, create a WebHook in Stripe, and backfill the secret key si
 ![1-4](/img/stripePayments/webhooks-en.png)
 
 ## SKU Configuration
-### 2.1 在Stripe增加产品和价格
+### 2.1 Add Products and Prices in Stripe
 Add a product price in Stripe and copy the price code
 
 ![2-1](/img/stripePayments/pricing-en.png)
@@ -158,8 +158,8 @@ Response:
 }
 ```
 
-## 在SDK中获取订单
-以下是通过SDK获取跨端支付订单的方法
+## Get the order in the SDK
+Here is how to get a cross-end payment order through the SDK
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -171,7 +171,7 @@ import TabItem from '@theme/TabItem';
         Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener() {
             @Override
             public void onSuccess(StripePurchaseInfo info) {
-              //拿到订单数据
+              //get Orders
               List<StripeOrderModel> list = info.subscriberOrders;
             }
 
