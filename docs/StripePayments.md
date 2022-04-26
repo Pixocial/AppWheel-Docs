@@ -159,7 +159,7 @@ Response:
 ```
 
 ## Get the order in the SDK
-Here is how to get a cross-end payment order through the SDK
+When cross-platform payment is needed, use this interface to query orders.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -171,7 +171,7 @@ import TabItem from '@theme/TabItem';
         Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener() {
             @Override
             public void onSuccess(StripePurchaseInfo info) {
-              //get Orders
+              //Get order information
               List<StripeOrderModel> list = info.subscriberOrders;
             }
 
