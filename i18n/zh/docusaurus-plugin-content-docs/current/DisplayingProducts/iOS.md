@@ -32,7 +32,7 @@ import TabItem from '@theme/TabItem';
 ```Swift
 
   AWPurchaseKit.getProductsInfo(withProductIdentifiers: productSet) { retrievedProducts in
-              if let error = result.error {
+              if let error = retrievedProducts.error {
                 //request error,check error msg
                 return
               }
