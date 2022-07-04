@@ -23,7 +23,7 @@ Billing.configure(context,"appId","secret")
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
-Billing.configure(context ,"appid" , “secret”)..setAppUserId("appUserId").build()
+Billing.configure(context ,"appid" , “secret”).setAppUserId("appUserId").build()
 ```
   </TabItem>
 
