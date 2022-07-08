@@ -25,6 +25,26 @@ AWPurchaseKit.getPurchaseInfo().isSubscriptionUnlockedUser()
   </TabItem>
 </Tabs>
 
+### Gets the current latest subscription
+#### Description:
+Gets the current subscription and, if there are multiple subscriptions, returns the one that has expired the longest
+
+<Tabs>
+  <TabItem value="Objective-C" label="Objective-C">
+
+```Objective-C
+[[AWPurchaseKit getPurchaseInfo] getLatestSubscriptionInfo];
+```
+
+  </TabItem>
+  <TabItem value="Swift" label="Swift">
+
+```Swift
+AWPurchaseKit.getPurchaseInfo().getLatestSubscriptionInfo()
+```
+  </TabItem>
+</Tabs>
+
 ### Obtain the existing valid subscriptions
 #### Description:
  It is used to tell a user's existing valid subscription.

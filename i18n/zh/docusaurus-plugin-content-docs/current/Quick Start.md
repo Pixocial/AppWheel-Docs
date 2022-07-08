@@ -128,7 +128,7 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ![createAnAppAndroid](/img/integration/createAnAppAndroid.png)
 - **App name**: 你的应用名称
-- **Store**: 平台，有Android、iOS之分，此时选择iOS
+- **Store**: 平台，有Android、iOS之分，此时选择Android
 - **Google Play package**: 应用的包名，包名为您的应用在谷歌商店的唯一标识，可在[Google Play Console](https://play.google.com/console)中获取
 - **Service Account credentials JSON**: 服务器校验订单需要的json文件。拥有这个文件文件之前请确认您已经在谷歌后台完成了谷歌支付必要的配置， AppWheel 必要的前期准备 - Android ，当您完成了文档中的配置您已经获取到了一个json文件，请把这个文件上传到我们的后台来，依此创建您的Android版本的app
 
