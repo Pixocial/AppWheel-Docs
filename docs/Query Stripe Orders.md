@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-title: 请求Stripe订单
+title: Query Stripe Orders
 id: Query Stripe Orders
 ---
 
