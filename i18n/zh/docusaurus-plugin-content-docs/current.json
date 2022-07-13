@@ -32,5 +32,8 @@
   },
   "sidebar.tutorialSidebar.category.User Benefits": {
     "message": "用户权益"
+  },
+  "sidebar.tutorialSidebar.category.Versions": {
+    "message": "版本历史"
   }
 }
