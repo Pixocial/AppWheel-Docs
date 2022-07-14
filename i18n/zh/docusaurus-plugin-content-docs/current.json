@@ -35,5 +35,8 @@
   },
   "sidebar.tutorialSidebar.category.Versions": {
     "message": "版本历史"
+  },
+  "sidebar.tutorialSidebar.category.Android Migrate to Google Billing 5": {
+    "message": "安卓迁移到谷歌支付5"
   }
 }
