@@ -8,6 +8,15 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Jul 18,2022
+##### version 1.0.13.1
+- 添加Stripe订单接口的返回数据model：EntitlementOrders
+
+#### Update - Jul 15,2022
+##### version 1.0.13.0
+- 修改初始化轮询机制
+- 修复请求服务器概率性签名错误
+
 #### Update - Apr 15,2022
 ##### version 1.0.12.0
 - 修改服务器请求地址为V2版本
@@ -57,6 +66,12 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+#### Update - Jul 18,2022
+##### version 2.0.7.1
+- 添加Stripe订单接口的返回数据model：AWEntitlementOrders
+- 修改初始化轮询机制
+- 修复请求服务器概率性签名错误
 
 #### Update - May 10,2022
 ##### version 2.0.6.1
