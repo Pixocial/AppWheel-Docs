@@ -9,6 +9,7 @@
     ...
     google()
     jcenter()
+    maven { url "https://maven.meitu.city/" }
 }
 
 dependencies {
@@ -20,6 +21,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://maven.meitu.city/" }
     }
 }
  
