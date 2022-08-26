@@ -19,7 +19,7 @@ UserOrderManager.getProvider().getOrders()
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
-UserOrderManager.getProvider().getOrders()
+UserOrderManager.getProvider().orders
 ```
   </TabItem>
 </Tabs>
