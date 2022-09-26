@@ -8,6 +8,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Aug 22,2022
+##### version 1.0.15.0
+- 升级GoogleBilling版本为4.0
+
+#### Update - Aug 12,2022
+##### version 1.0.14.0
+- 修改恢复购买的接口调用
+
 #### Update - Jul 18,2022
 ##### version 1.0.13.1
 - 添加Stripe订单接口的返回数据model：EntitlementOrders
@@ -67,11 +75,22 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="iOS" label="iOS">
 
+#### Update - Sep 16,2022
+##### version 2.0.8.1
+- 修复优惠必备数据为空导致的crash
+
+#### Update - Aug 9,2022
+##### version 2.0.8.0
+- 修复验签错误
+- 添加商品购买状态接口：getProductHasPaiedWithProductId
+- 添加日志上报信息：awTranId
+
 #### Update - Jul 18,2022
 ##### version 2.0.7.1
 - 添加Stripe订单接口的返回数据model：AWEntitlementOrders
 - 修改初始化轮询机制
 - 修复请求服务器概率性签名错误
+
 
 #### Update - May 10,2022
 ##### version 2.0.6.1
