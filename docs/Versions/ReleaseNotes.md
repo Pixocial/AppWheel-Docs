@@ -8,6 +8,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Sep 28,2022
+##### version 1.0.16.0
+- 添加marvel的功能接口
+
+#### Update - Sep 27,2022
+##### version 1.0.15.1
+- 修改处于宽限期的订单为有效订单
+
 #### Update - Aug 22,2022
 ##### version 1.0.15.0
 - 升级GoogleBilling版本为4.0
@@ -74,6 +82,10 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+#### Update - Sep 29,2022
+##### version 2.0.9.0
+- 添加marvel的功能接口
 
 #### Update - Sep 16,2022
 ##### version 2.0.8.1
