@@ -75,6 +75,8 @@ If your project is a Swift project, then you need to [import Objective-C into Sw
 
 [Adding a Global Listener](/Adding_a_Global_Listener)
 
+[Demo](git@gitlab.pixocial.com:demo/appwheel-ios-demo.git)
+
 ### Step 5: Acceptance Inspection
 - App Configuration Check
 - Whether the notification is configured successfully: Check the configuration in the AppStoreConnect backend
@@ -166,6 +168,8 @@ To Google Cloud Platform:
 [User Benefits](/UserBenefits/Android.md)
 
 [Adding a Global Listener](/Adding_a_Global_Listener)
+
+[Demo](git@gitlab.pixocial.com:demo/appwheel-android-demo.git)
 
 ### Step 4: Acceptance Inspection
 - App Configuration Check
