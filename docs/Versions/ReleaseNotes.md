@@ -8,6 +8,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Oct 10,2022
+##### version 1.0.17.0
+- 添加设置属性接口：UserInfoManager.getInstance().setUserAttribute
+
 #### Update - Sep 28,2022
 ##### version 1.0.16.0
 - 添加marvel的功能接口
@@ -82,6 +86,18 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+#### Update - Oct 31,2022
+##### version 2.0.10.2
+- 修复bug：用户处于订阅期的时候isSubscriptionUnlockedUser状态返回错误
+
+#### Update - Oct 31,2022
+##### version 2.0.10.1
+- 修复bug：在初始化之前调用恢复购买的导致的签名secret为空问题
+
+#### Update - Oct 10,2022
+##### version 2.0.10.0
+- 添加设置属性接口：[AWPurchaseKit setUserAttributes]
 
 #### Update - Sep 29,2022
 ##### version 2.0.9.0
