@@ -76,7 +76,7 @@ slug: /
 
 [添加全局监听](/Adding_a_Global_Listener)
 
-[Demo](git@gitlab.pixocial.com:demo/appwheel-ios-demo.git)
+
 
 
 ### 第五步：验收检查
@@ -171,7 +171,7 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 [添加全局监听](/Adding_a_Global_Listener)
 
-[Demo](git@gitlab.pixocial.com:demo/appwheel-android-demo.git)
+
 
 ### 第四步：验收检查
 - App 配置检查

@@ -75,7 +75,7 @@ If your project is a Swift project, then you need to [import Objective-C into Sw
 
 [Adding a Global Listener](/Adding_a_Global_Listener)
 
-[Demo](git@gitlab.pixocial.com:demo/appwheel-ios-demo.git)
+
 
 ### Step 5: Acceptance Inspection
 - App Configuration Check
@@ -169,7 +169,7 @@ To Google Cloud Platform:
 
 [Adding a Global Listener](/Adding_a_Global_Listener)
 
-[Demo](git@gitlab.pixocial.com:demo/appwheel-android-demo.git)
+
 
 ### Step 4: Acceptance Inspection
 - App Configuration Check
