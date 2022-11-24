@@ -8,6 +8,11 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Nov 17,2022
+##### version 1.0.18.0
+- 添加打点上报的失败重试机制
+- 修改打点上报的参数
+
 #### Update - Oct 10,2022
 ##### version 1.0.17.0
 - 添加设置属性接口：UserInfoManager.getInstance().setUserAttribute
@@ -86,6 +91,13 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+#### Update - Nov 17,2022
+##### version 2.0.11.0
+- 去掉checkProductPurchaseHistoryStatus接口,请用getProductHasPaiedWithProductId代替
+- 修复多线程引起的打点上报概率性crash
+- 增加打点上报的失败重试机制
+- 修改打点上报的参数
 
 #### Update - Oct 31,2022
 ##### version 2.0.10.2
