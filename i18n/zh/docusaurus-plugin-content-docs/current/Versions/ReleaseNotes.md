@@ -8,6 +8,10 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Dec 8,2022
+##### version 1.0.19.0
+- 新增收集：系统版本号、手机型号、sim卡国家
+
 #### Update - Nov 17,2022
 ##### version 1.0.18.0
 - 添加打点上报的失败重试机制
@@ -91,6 +95,11 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+
+#### Update - Dec 8,2022
+##### version 2.0.12.0
+- 新增收集：系统版本号、手机型号、sim卡国家
 
 #### Update - Nov 17,2022
 ##### version 2.0.11.0
