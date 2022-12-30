@@ -11,6 +11,7 @@ import TabItem from '@theme/TabItem';
 #### Update - Dec 8,2022
 ##### version 1.0.19.0
 - 新增收集：系统版本号、手机型号、sim卡国家
+- 修复获取商品异常可能带来的crash
 
 #### Update - Nov 17,2022
 ##### version 1.0.18.0
