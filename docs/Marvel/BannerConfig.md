@@ -1,7 +1,7 @@
 ---
 sidebar_position: 7
-title: banner配置
-id: banner配置
+title: Banner配置
+id: Banner配置
 ---
 
 
