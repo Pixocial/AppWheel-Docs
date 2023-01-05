@@ -8,10 +8,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Jan 5,2023
+##### version 1.0.20.0
+- 新增Marvel功能：高级开关、手动解锁
+- 修复获取商品异常可能带来的crash
+
 #### Update - Dec 8,2022
 ##### version 1.0.19.0
 - 新增收集：系统版本号、手机型号、sim卡国家
-- 修复获取商品异常可能带来的crash
 
 #### Update - Nov 17,2022
 ##### version 1.0.18.0
@@ -97,6 +101,10 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="iOS" label="iOS">
 
+#### Update - Jan 5,2023
+##### version 2.0.13.0
+- 新增Marvel功能：高级开关、手动解锁
+- 新增收集：购买商品的国家码
 
 #### Update - Dec 8,2022
 ##### version 2.0.12.0
