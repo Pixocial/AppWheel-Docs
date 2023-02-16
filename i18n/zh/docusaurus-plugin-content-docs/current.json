@@ -38,5 +38,11 @@
   },
   "sidebar.tutorialSidebar.category.Android Migrate to Google Billing 5": {
     "message": "安卓迁移到谷歌支付5"
+  },
+  "sidebar.tutorialSidebar.category.Others": {
+    "message": "其他"
+  },
+  "sidebar.tutorialSidebar.category.Necessary preparation for AppWheel_Android": {
+    "message": "AppWheel 必要的前期准备 - Android "
   }
 }

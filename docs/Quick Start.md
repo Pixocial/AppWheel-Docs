@@ -131,7 +131,7 @@ Parameter: taskId. The value of AWCouponModel, which is obtained from calling th
 - **App name**: The name of your app
 - **Store**: The platform that is divided into Android and iOS, and you should select Android in this case.
 - **Google Play package**: The package name of your app, which is the unique identifier of your app in the Google Play Store and can be obtained in the Google Play Console
-- **Service Account credentials JSON**: The json file required by the server to verify the order. Before you obtain this file, please confirm that you have completed the necessary configuration for Google payments, which is described in the Necessary Preparation for AppWheel (Android). When you have completed the configuration, you will have a json file. Please upload this file to our backend to create your Android app accordingly.
+- **Service Account credentials JSON**: The json file required by the server to verify the order. Before you obtain this file, please confirm that you have completed the necessary configuration for Google payments, which is described in the [Necessary Preparation for AppWheel (Android)](Others/NecessaryPreparationForAppWheel_Android.md). When you have completed the configuration, you will have a json file. Please upload this file to our backend to create your Android app accordingly.
 
 ### Step 2: Configuration
 #### Notification Receiving Configuration (<font color="red"> **Important: If you have your own receiving server, please refer to the "Configure Notification Receiving Server"**</font>)
