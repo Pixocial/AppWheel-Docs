@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Entitlements
-id: Configuring Entitlements
+id: entitlements
 ---
 
 # Entitlements

@@ -33,5 +33,5 @@ You can customize your project name and icon。
 
 ### Stripe
 
-[Read More](/stripe)
+[Read More](/Projects/stripe)
 

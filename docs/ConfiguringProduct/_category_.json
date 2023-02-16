@@ -1,4 +1,8 @@
 {
-  "label": "Product",
-  "position": 3
+  "label": "Configuring Product",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "ConfiguringProduct/Entitlements"
+  }
 }
