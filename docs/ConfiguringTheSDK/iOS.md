@@ -48,7 +48,7 @@ AWPurchaseKit.configure(withAppId: appId,
     
  ///Use the following method for version 2.0.2.1 and above.
  AWPurchaseKit.configure(withAppId: appId, 
-                            secret:appSecret 
+                            secret:appSecret, 
                                uid: uid) { success, error in
       if success == false {
         // init failed,check error

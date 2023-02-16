@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10 
+sidebar_position: 101 
 title: 错误码 
 id: Error Code
 ---

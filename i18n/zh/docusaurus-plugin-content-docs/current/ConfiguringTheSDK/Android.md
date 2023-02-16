@@ -8,34 +8,23 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="Java" label="Java" default>
 
+
 ```Java
-///低于版本1.0.5.6的
-// 在Application中的oncreate中初始化配置，appId为注册应用时候分配的应用id
-Billing.configure(context ,"appid" , appUserId , 
-new OnBillingClientSetupFinishedListener(){
-    @Override
-    public void onBillingSetupFinished(int billingResponseCode) {
-        super.onBillingSetupFinished(billingResponseCode);
-    }
-});
-///1.0.5.6之后
-Billing.configure(context ,"appid" , secret,appUserId , 
-new OnBillingClientSetupFinishedListener(){
-    @Override
-    public void onBillingSetupFinished(int billingResponseCode) {
-        super.onBillingSetupFinished(billingResponseCode);
-    }
-});
+
+Billing.configure(context,"appId","secret")
+                .setAppUserId("appUserId")
+                .setListener(new OnBillingClientSetupFinishedListener(){
+                    @Override
+                    public void onBillingSetupFinished(int billingResponseCode) {
+                    }
+                })
+                .build();
 ```
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
-///Older than version 1.0.5.6
-//Initialize the configuration in Application - oncreate. The appId refers to the ID you received when registering. 
-Billing.configure(context ,"appid" , appUserId , listener)
-///Version 1.0.5.6 or later
-Billing.configure(context ,"appid" , secret, appUserId , listener)
+Billing.configure(context ,"appid" , “secret”).setAppUserId("appUserId").build()
 ```
   </TabItem>
 
