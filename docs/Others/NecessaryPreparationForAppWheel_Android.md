@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Necessary preparation for AppWheel_Android
+title: Necessary preparation for AppWheel(Android)
 id: Necessary preparation for AppWheel_Android
 ---
 
