@@ -44,5 +44,11 @@
   },
   "sidebar.tutorialSidebar.category.Necessary preparation for AppWheel_Android": {
     "message": "AppWheel 必要的前期准备（Android）"
+  },
+  "sidebar.tutorialSidebar.category.Configuring Product": {
+    "message": "商品配置"
+  },
+  "sidebar.tutorialSidebar.category.Project And Apps": {
+    "message": "项目和应用"
   }
 }
