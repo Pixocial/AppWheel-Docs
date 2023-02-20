@@ -139,7 +139,7 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ![configServerAndroid](/img/integration/configServerAndroid.png)
 
-配置到Google Cloud Platform。
+配置到Google Cloud Platform。（在配置前，确保已经开通了[Google Cloud Pub/Sub](https://developer.android.com/google/play/billing/getting-ready#configure-rtdn)）
 
 ![notificationReceivingConfigurationAndroid](/img/integration/notificationReceivingConfigurationAndroid-zh.png)
 
@@ -175,7 +175,7 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ### 第四步：验收检查
 - App 配置检查
-- 通知是否配置成功：检查 Google Cloud Pub/Sub 队列是否有推送设置
+- 通知是否配置成功：检查 [Google Cloud Pub/Sub](https://cloud.google.com/pubsub) 队列是否有推送设置
 
 
 ![pubSub](/img/integration/pubSub-zh.png)

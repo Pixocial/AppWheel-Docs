@@ -138,7 +138,7 @@ Parameter: taskId. The value of AWCouponModel, which is obtained from calling th
 To send Google server notifications to AppWheel, please configure the address
 
 ![configServerAndroid](/img/integration/configServerAndroid.png)
-To Google Cloud Platform:
+To Google Cloud Platform,(ensure you can enable [Google Cloud Pub/Sub](https://developer.android.com/google/play/billing/getting-ready#configure-rtdn)）):
 
 ![notificationReceivingConfigurationAndroid](/img/integration/notificationReceivingConfigurationAndroid.png)
 #### Configure Notification Receiving Server(optional)
@@ -173,7 +173,7 @@ To Google Cloud Platform:
 
 ### Step 4: Acceptance Inspection
 - App Configuration Check
-- To make sure a notification is configured successfully: Check if the Google Cloud Pub/Sub queue has notification settings
+- To make sure a notification is configured successfully: Check if the [Google Cloud Pub/Sub](https://cloud.google.com/pubsub) queue has notification settings
 
 
 ![pubSub](/img/integration/pubSub.png)
