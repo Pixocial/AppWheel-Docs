@@ -21,7 +21,7 @@ slug: /
 #### 通知配置(<font color="red"> **重要：如果有自己的接收服务器参考「配置通知接收服务器」说明"**</font>)
   - 把Apple服务器通知发送Appwheel，请将以下地址
   
-![Overall Process](/img/integration/notificationReceivingConfiguration0.png)
+![Overall Process](/img/integration/configServerIOS.png)
 
 
   - 配置到 Apple Store Connect: （目前支持V1类型通知）
@@ -34,7 +34,7 @@ slug: /
 #### 配置通知接收服务器（可选）
 - 如果业务方有自己的通知接收服务器需要这部分推送数据可以再 AppWheel 主站里设置接收服务器地址，我们会按照消息到来的顺序将每条消息发送一次，但有时可能并不按顺序传送消息，或者会将消息传送多次，业务方需按照幂等处理的方式设计程序。
 
-![Overall Process](/img/integration/configServerIOS.png)
+![Overall Process](/img/integration/configServerPushIos.png)
 
 - 配置好了之后，可以通过 「Test」按钮测试地址的可用性，需要和官方要求的配置一致，即接受 POST 方法的请求，在处理成功后返回 200 Http状态码，在处理失败时返回 400 或 500 状态码；另，因为测试请求这里没有实际的业务数据 body，所以在收到空数据的时候返回 200 的http 状态码即可。
 
@@ -139,14 +139,14 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ![configServerAndroid](/img/integration/configServerAndroid.png)
 
-配置到Google Cloud Platform。
+配置到Google Cloud Platform。（在配置前，确保已经开通了[Google Cloud Pub/Sub](https://developer.android.com/google/play/billing/getting-ready#configure-rtdn)）
 
 ![notificationReceivingConfigurationAndroid](/img/integration/notificationReceivingConfigurationAndroid-zh.png)
 
 #### 配置通知接收服务器（可选）
 - 如果业务方有自己的通知接收服务器需要这部分推送数据可以再 AppWheel 主站里设置接收服务器地址，我们会按照消息到来的顺序将每条消息发送一次，但有时可能并不按顺序传送消息，或者会将消息传送多次，业务方需按照幂等处理的方式设计程序。
 
-![notificationReceivingConfigurationAndroid](/img/integration/configServerAndroid.png)
+![notificationReceivingConfigurationAndroid](/img/integration/configServerPushAndroid.png)
 
 - 配置好了之后，可以通过 「Test」按钮测试地址的可用性，需要和官方要求的配置一致，即接受 POST 方法的请求，在处理成功后返回 200 Http状态码，在处理失败时返回 400 或 500 状态码；另，因为测试请求这里没有实际的业务数据 body，所以在收到空数据的时候返回 200 的http 状态码即可。
 
@@ -175,7 +175,7 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ### 第四步：验收检查
 - App 配置检查
-- 通知是否配置成功：检查 Google Cloud Pub/Sub 队列是否有推送设置
+- 通知是否配置成功：检查 [Google Cloud Pub/Sub](https://cloud.google.com/pubsub) 队列是否有推送设置
 
 
 ![pubSub](/img/integration/pubSub-zh.png)
