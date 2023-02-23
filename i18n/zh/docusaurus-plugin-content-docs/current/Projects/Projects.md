@@ -4,34 +4,36 @@ title: Projects
 id: Projects
 ---
 
-# Projects
+# 项目
 
-**Configuring multiple Apps under a single Project**
+**在单个项目下配置多个应用程序**
 
 ---
 
-A Project is a set of Apps, and Apps are paired with a single platform. For example, a typical Project might contain one iOS App and one Google Play Store App. All Apps within one Project share the same basic setup, like entitlements.
-![Projects](/img/tutorial/projects.png)
+项目是一组应用程序，应用程序与单个平台配对。例如，一个典型的项目可能包含一个iOS应用程序和一个Google Play Store应用程序。
+一个项目中的所有应用程序共享相同的基本设置，如权益。
+![项目](/img/tutorial/projects.png)
 
-## Create Project
+## 创建项目
 
-To create a Project, click the '+ New' button in the Projects dropdown panel at the top of the AppWheel dashboard:
-![Create Project](/img/tutorial/create_project.png)
+要创建项目，请单击AppWheel仪表板顶部“Project”下拉面板中的'+NEW'按钮：
 
-You can customize your project name and icon。
-![Create Project](/img/tutorial/create_project_02.png)
+![创建项目](/img/tutorial/create_project.png)
 
-## Create Apps
+您可以自定义项目名称和图标
+![创建项目](/img/tutorial/create_project_02.png)
+
+## 创建 Apps
 
 ### iOS
 
-[Read More](/#ios-integration)
+[更多](/#ios-integration)
 
 ### Android
 
-[Read More](/#android-integration)
+[更多](/#android-integration)
 
 ### Stripe
 
-[Read More](/Projects/stripe)
+[更多](/Projects/stripe)
 

@@ -1,12 +1,13 @@
 ---
-sidebar_position: 8
-title: Query Stripe Orders
-id: Query Stripe Orders
+sidebar_position: 7
+title: Sharing Subscriptions Across Apps and Platforms
+id: sharing_subscriptions
 ---
+
 
 当有需要使用到跨端支付功能的时候，可以通过该接口来获取跨端支付的订单
 
- 
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
