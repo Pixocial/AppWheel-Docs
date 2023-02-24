@@ -93,8 +93,8 @@ AWPurchaseKit.configure(withAppId: appId,
 
 # 使用登录用户ID初始化AppWheel
 
-大多数App都有自己的登录流程和用户系统，可以选择将登录后获取的用户唯一标识（AppUserid）在初始化SDK时进行绑定，此后进行的任何购买订单都将关联到该用户ID上，如将[Athena](https://admin.pixocial.com/athena/account/login)
-作为应用程序用户账号系统，可以把`sub_id`作为用户ID上传到AppWheel。
+大多数App都有自己的登录流程和用户系统，可以选择将登录后获取的用户唯一标识（AppUserid）在初始化SDK时进行绑定，此后进行的任何购买订单都将关联到该用户ID上，如将[Athena](https://docs.pixocial.io/athena/docs/intro)
+作为应用程序用户账号系统，可以把`openid`作为用户ID上传到AppWheel。
 
 使用登录用户ID拥有额外的好处
 

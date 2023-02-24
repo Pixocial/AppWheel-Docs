@@ -32,7 +32,7 @@ appwheel.createPurchase({
 
 | 字段 | 类型 | 必须 | 说明 |
 |:----------------|:-------------:|:--:|-------------------------------:|
-| appUserId | string | 是 | 用户唯一标识，如果使用Athena登录，建议传入sub_id |
+| appUserId | string | 是 | 用户唯一标识，如果使用[Athena](https://docs.pixocial.io/athena/docs/intro)登录，建议传入openid |
 | productId | string | 是 | 从获取商品接口获取到的productId |
 | successUrl | string | 是 | 支付成功后的回调地址 |
 | cancelUrl | string | 是 | 取消支付的回调地址 |
