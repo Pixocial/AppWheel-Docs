@@ -17,6 +17,8 @@ id: entitlements
 如有一个叫`Pro`会员服务。通常情况下，会提供不同的商品对应该项服务，如按月续订的`com.appwheel.1month.normal`和按年续订的`com.appwheel.1year.normal`
 ，或者在IOS端和Android端都提供相同的服务，但是因为平台不一样所以产品标识分别为`com.appwheel.1month.ios.normal`、`com.appwheel.1month.google.normal`，这些都可以配置到同一个权益中方便管理，同时这对于跨App共享订阅权益也是有益的。
 
+![entitlement-sku](/img/tutorial/entitlement_sku.jpg)
+
 ## 权益的使用场景
 
 当用户在APP上完成购买后，应用应该立即向用户解锁相应的服务或者功能。

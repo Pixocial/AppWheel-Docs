@@ -1,14 +1,12 @@
 ---
 sidebar_position: 1
-title: JS SDK
-id: js_sdk
+title: Api
+id: api
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-在调用接口时，需要进行接口签名，以保证数据安全。
-
-
+AppWheel支持Stripe支付，支持Api接口，并以Web形式的页面支付，提供JS SDK。
 
 <Tabs>
   <TabItem value="Javascript" label="Javascript">

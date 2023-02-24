@@ -4,7 +4,9 @@ title: Stripe
 id: stripe
 ---
 
-用户选择商品后，调用该方法完成购买。
+用户选择商品后，可以开始购买流程，接入方需要准备好回调地址，在用户付款成功后会回调到`successUrl`或者`cancelUrl`，接收到该回调后可以展示支付成功、跳转回订阅前的Web页面或者打开客户端程序。
+
+![购买历程图](/img/stripePayments/sub_buy.jpg)
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -36,6 +38,7 @@ appwheel.createPurchase({
 | cancelUrl | string | 是 | 取消支付的回调地址 |
 | trialPeriodDays | int | 否 | 免费试用天数 |
 |promotionCode| array &lt;string&gt; | 否 |优惠码，选填，目前只支持一个优惠码|
+更多Api接口[点击此处](/Installation/api)
 
 ### 下一步
 
