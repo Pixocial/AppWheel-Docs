@@ -25,3 +25,7 @@ id: stripe-sku
 **同时，您可以在相同权限下在应用程序中交叉查询订单，从而可以根据需要进行跨终端购买。**
 
 [Read More](/ConfiguringProduct/entitlements)
+
+## 下一步
+
+[在应用获取商品](/DisplayingProducts/Stripe)

@@ -40,7 +40,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="Java" label="Java" default>
 
-```Java
+```java
         Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener(){
 @Override
 public void onSuccess(StripePurchaseInfo info){
