@@ -42,4 +42,4 @@ appwheel.createPurchase({
 
 ### 下一步
 
-[订单和权益查询](/UserBenefits/stripe)
+[订单和权益查询](/UserBenefits/api)
