@@ -9,12 +9,7 @@ import TabItem from '@theme/TabItem';
 
 同一AppWheel项目中的应用程序共享相同的登录用户ID命名空间，这意味着它们也共享订阅。在同一项目的不同应用程序中登录同一用户ID的用户将有权访问相同的权利。这允许在不同应用程序之间共享订阅状态，甚至在不同平台上也是如此。
 
-*
-
-*
-
-请注意，匿名应用用户ID无法跨应用和平台共享订阅状态，因此您需要通过自己的身份验证系统使用自定义应用用户ID进行标识,如需匿名用户到登录用户的权益迁移请[参考](/UserBenefits/user-ids#%E5%8C%BF%E5%90%8D%E7%94%A8%E6%88%B7%E5%88%B0%E7%99%BB%E5%BD%95%E7%94%A8%E6%88%B7%E7%9A%84%E6%9D%83%E7%9B%8A%E8%BF%81%E7%A7%BB)。
-**
+**请注意，匿名应用用户ID无法跨应用和平台共享订阅状态，因此您需要通过自己的身份验证系统使用自定义应用用户ID进行标识,如需匿名用户到登录用户的权益迁移请[参考](/UserBenefits/user-ids#%E5%8C%BF%E5%90%8D%E7%94%A8%E6%88%B7%E5%88%B0%E7%99%BB%E5%BD%95%E7%94%A8%E6%88%B7%E7%9A%84%E6%9D%83%E7%9B%8A%E8%BF%81%E7%A7%BB)。**
 
 ## 前置条件
 
@@ -141,20 +136,19 @@ appwheel.createPurchase({
 <Tabs>
   <TabItem value="Java" label="Java" default>
 
-```java
-
+```Java
 Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener(){
-@Override
-public void onSuccess(StripePurchaseInfo info){
-        //拿到权益
-        List<StripeOrderModel> list=info.entitlement;
-        }
-@Override
-public void onError(String msg){
+    @Override
+    public void onSuccess(StripePurchaseInfo info){
+              //拿到权益
+              List<StripeOrderModel> list=info.entitlement;
+            }
+
+    @Override
+    public void onError(String msg){
 
         }
         });
-
 ```
 
   </TabItem>
@@ -178,29 +172,26 @@ Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener {
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-
 [AWPurchaseKit queryStripeOrdersWithCompletion:^(BOOL success, AWStripePurchaseInfo * _Nullable info, AWError * _Nullable error) {
-        [self hideLoading];
-        if (error) {
-          //do something
-            return;
-        }
-        //获取权益
-        if (info.entitlement) {
-        }
+    if (error) {
+      //do something
+        return;
+    }
+    //获取权益
+    if (info.entitlement) {
+
+    }
 }];
-    
 ```
 
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-
-    AWPurchaseKit.queryStripeOrders { success, info, error in
-                            //获取权益
-                            info?.entitlement
-                        }
+AWPurchaseKit.queryStripeOrders { success, info, error in
+    //获取权益
+    info?.entitlement
+}
 ```
 
   </TabItem>
@@ -208,13 +199,11 @@ Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener {
  <TabItem value="javascript" label="javascript">
 
 ```javascript
-
 const appwheel = new AppWheel({AppID}, {platfrom}, {AppSecret})
 appwheel.entitlement(this.appuserid).then(res => res.json()).then((json) => {
     console.log("当前有效权益", Object.keys(json.data.entitlement))
     console.log("当前已失效权益", Object.keys(json.data.invalidEntitlement))
 })
-
 
 ```
 
