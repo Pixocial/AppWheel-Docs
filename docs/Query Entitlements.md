@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
-title: Query Stripe Orders
-id: Query Stripe Orders
+title: Query Entitlements
+id: Query Entitlements
 ---
 
 当有需要使用到跨端支付功能的时候，可以通过该接口来获取跨端支付的订单
@@ -14,9 +14,9 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Java" label="Java" default>
 
 ```Java
-        Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener() {
+        Market.getInstance().getEntitlementPurchaseInfo(new StripeQueryOrderListener() {
             @Override
-            public void onSuccess(StripePurchaseInfo info) {
+            public void onSuccess(EntitlementPurchaseInfo info) {
               //拿到权益
               List<StripeOrderModel> list = info.entitlement;
             }
@@ -32,8 +32,8 @@ import TabItem from '@theme/TabItem';
 
 ```Kotlin
       
-      Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener{
-            override fun onSuccess(info: StripePurchaseInfo?) {
+      Market.getInstance().getEntitlementPurchaseInfo(object : StripeQueryOrderListener{
+            override fun onSuccess(info: EntitlementPurchaseInfo?) {
                 //获取权益
                 info?.entitlement
             }
@@ -47,7 +47,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-    [AWPurchaseKit queryStripeOrdersWithCompletion:^(BOOL success, AWStripePurchaseInfo * _Nullable info, AWError * _Nullable error) {
+    [AWPurchaseKit queryEntitlementOrdersWithCompletion:^(BOOL success, AWEntitlementPurchaseInfo * _Nullable info, AWError * _Nullable error) {
         [self hideLoading];
         if (error) {
           //do something
@@ -62,7 +62,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-    AWPurchaseKit.queryStripeOrders { success, info, error in
+    AWPurchaseKit.queryEntitlementOrders { success, info, error in
                             //获取权益
                             info?.entitlement
                         }
