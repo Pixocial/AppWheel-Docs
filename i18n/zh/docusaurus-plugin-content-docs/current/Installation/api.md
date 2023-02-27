@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Api
+title: Stripe
 id: api
 ---
 import Tabs from '@theme/Tabs';
