@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: 跨平台和App共享订阅指引
+title: App Sharing Subscription Guide
 id: sharing_subscriptions
 ---
 
@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 **请注意，匿名应用用户ID无法跨应用和平台共享订阅状态，因此您需要通过自己的身份验证系统使用自定义应用用户ID进行标识。**
 
-# 前置条件
+## 前置条件
 
 要在应用实现跨平台和App共享订阅，需要您先了解以下内容
 
@@ -21,19 +21,23 @@ import TabItem from '@theme/TabItem';
 - [购买](/MakingPurchases/stripe)
 - [权益查询](/UserBenefits/api)
 
+## 开始步骤
+
 需要明确的是，应用商店或者支付平台间的壁垒是存在的，商品是不能跨支付平台购买的，比如在Google应用商店添加的商品，不可能用苹果应用商店账号支付；同理苹果应用商店的服务也不能通过Stripe购买。
 
 AppWheel支持的跨平台和App共享订阅，其本质是通过识别用户身份，将同一用户在不同App中的订阅状态查询并展示的过程，在熟悉前置条件中列举的内容和明确共享的实现方式后，按照以下步骤既可以实现订阅共享：
 
-- 1.在同一个项目下创建至少两个需要共享订阅的app，
-  ![项目](/img/tutorial/projects.png)
+### 1.在同一个项目下创建至少两个需要共享订阅的app，
 
-- 2.商品添加到AppWheel，并配置到同一个Entitlements中
+![项目](/img/tutorial/projects.png)
 
-![entitlement-sku](/img/tutorial/entitlement_sku.jpg)
+### 2.商品添加到AppWheel，并配置到同一个Entitlements中
 
-- 3.安装SDK，并用相同的用户ID初始化SDK
-  <Tabs>
+![entitlement-sku](/img/tutorial/entitlements.png)
+
+### 3.安装SDK，并用相同的用户ID初始化SDK
+
+<Tabs>
   <TabItem value="Java" label="Java" default>
 
 ```Java
@@ -104,9 +108,10 @@ AWPurchaseKit.configure(withAppId: appId,
   </TabItem>
 </Tabs>
 
-- 4.购买订阅
+### 4.购买订阅
 
 利用Stripe订阅
+
 <Tabs>
 <TabItem value="javascript" label="javascript">
 
@@ -124,12 +129,9 @@ appwheel.createPurchase({
   </TabItem>
 </Tabs>
 
-- 5.在另一个APP查询权益
+### 5.在另一个APP查询权益
 
 通过SDK查询跨端权益
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="Java" label="Java" default>

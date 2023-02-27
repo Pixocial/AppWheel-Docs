@@ -4,41 +4,61 @@ title: Entitlements
 id: entitlements
 ---
 
-# Entitlements
+# 权益
 
-An entitlement represents a level of access, features, or content that a user is "entitled" to.
+权益表示用户“有权”访问的访问级别、功能或内容。
 
-Entitlements are used to ensure a user has appropriate access to content based on their purchases, without having to manage all of the product identifiers in your app code.
+授权用于确保用户能够根据其购买内容适当访问内容，而无需管理应用程序代码中的所有产品标识符。
 
-Most apps only have one entitlement, unlocking all premium features. However, if you had two tiers of content such as Gold and Platinum, you would have 2 entitlements.
+大多数应用程序只有一项权益，即解锁所有高级功能。但是，如果您有两层内容（如黄金和白金），您将有两种权益。
 
-**A user's entitlements are shared across all apps contained within the same project.**
+**用户的权限在同一项目中包含的所有应用程序中共享。**
 
-## Creating an Entitlement
+如有一个叫`Pro`会员服务。通常情况下，会提供不同的商品对应该项服务，如按月续订的`com.appwheel.1month.normal`和按年续订的`com.appwheel.1year.normal`
+，或者在IOS端和Android端都提供相同的服务，但是因为平台不一样所以产品标识分别为`com.appwheel.1month.ios.normal`、`com.appwheel.1month.google.normal`，这些都可以配置到同一个权益中方便管理，同时这对于跨App共享订阅权益也是有益的。
 
-To create a new entitlement, click Entitlements in the left menu of the Project dashboard and click + New. You'll need to enter a unique identifier for your entitlement that you can reference in your app, like "pro".
+![entitlement-sku](/img/tutorial/entitlement_sku.jpg)
 
-Most apps only have one entitlement, but create as many as you need. For example a navigation app may have a subscription to "pro" access, and one-time purchases to unlock specific map regions. In this case there would probably be one "pro"
-entitlement, and additional entitlements for each map region that could be purchased.
+## 权益的使用场景
+
+当用户在APP上完成购买后，应用应该立即向用户解锁相应的服务或者功能。
+
+### 传统模式
+
+未使用权益的传统模式下，App需要根据用户购买订单的具体商品ID解锁服务，这种方式存在缺点：
+
+- 如果商店内配置了上百种商品，那么App需要硬编码映射
+- 后面增加的商品，用户需要升级App后才能使用
+- 如果某个商品对应的功能发生变化，也需要用户升级
+
+### 使用权益模式
+
+将产品和权益绑定后，App购买订单后，可以通过订单的商品和权益关联解锁用户功能
+
+- 在AppWheel设置好商品和服务的映射关系，不需要app保存
+- 可以动态修改映射关系，不需要等待用户升级app
+
+## 创建权益
+
+要创建新权益，请单击项目面板左侧菜单中的权益，然后单击`+ NEW`。你需要为你的权利输入一个唯一的标识符，你可以在你的应用程序中引用，比如`Pro`。
 
 ![setup entitlement](/img/tutorial/create_entitlement.png)
 
-## Attaching Products to Entitlements
+## 关联产品和权益
 
-Once entitlements are created, you should attach products to entitlements. This lets AppWheel know which entitlements to unlock for users after they purchase a specific product.
+创建权利后，应将产品附加到权利。这让AppWheel知道在用户购买特定产品后要解锁哪些权限。
 
-When viewing an Entitlement, click the edit button to attach a product. If you've already added your products, you'll be able to select one from the list to attach.
+查看授权时，单击编辑按钮以附加产品。如果您已经添加了您的产品，则可以从列表中选择一个要附加的产品。
 
 ![setup entitlement](/img/tutorial/attact_product_entitlement.png)
 
-When a product that is attached to an entitlement is purchased, that entitlement becomes active for the duration of the product. Subscription products will unlock entitlements for the subscription duration, and non-consumable and consumable
-purchases that are attached to an entitlement will unlock that content forever.
+当购买附于权利的产品时，该权利在产品的有效期内变为有效。订阅产品将在订阅期间解锁授权，而附加到授权的非消耗品和消耗品购买将永久解锁该内容。
 
-If you have non-subscription products, you may or may not want to add them to entitlements depending on your use case. If the product is non-consumable (e.g. lifetime access to "pro" features), you likely want to attach it to an
-entitlement. However, if it is consumable (e.g. purchase more lives in a game) you likely do not want to add them to an entitlement.
+如果您有非订阅产品，您可能希望也可能不希望将它们添加到权利中，具体取决于您的用例。如果产品是非消耗品（例如终身使用`Pro`功能），您可能希望将其附加到权利中。然而，如果它是消耗品（例如在游戏中购买更多生命），您可能不想将其添加到权利中。
 
-Attaching an entitlement to a product will grant that entitlement to any customers that have previously purchased that product. Likewise, detaching an entitlement from a product will remove it for any customers that have previously
-purchased that product.
+将权利附加到产品将授予先前购买过该产品的任何客户。同样，从产品中分离权利将删除以前购买过该产品的任何客户的权利。
 
-When designing your Entitlement structure, keep in mind that a single product can unlock multiple entitlements, and multiple products may unlock the same entitlement.
+在设计权利结构时，请记住，单个产品可以解锁多个权利，而多个产品可以解锁同一权利。
+
+
 
