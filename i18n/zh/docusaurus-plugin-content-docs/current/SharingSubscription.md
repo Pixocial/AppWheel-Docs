@@ -137,18 +137,18 @@ appwheel.createPurchase({
   <TabItem value="Java" label="Java" default>
 
 ```Java
-        Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener(){
-@Override
-public void onSuccess(StripePurchaseInfo info){
-        //拿到权益
-        List<StripeOrderModel> list=info.entitlement;
-        }
+Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener(){
+    @Override
+    public void onSuccess(StripePurchaseInfo info){
+              //拿到权益
+              List<StripeOrderModel> list=info.entitlement;
+            }
 
-@Override
-public void onError(String msg){
+    @Override
+    public void onError(String msg){
 
-        }
-        });
+            }
+});
 ```
 
   </TabItem>
@@ -172,26 +172,26 @@ Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener {
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-    [AWPurchaseKit queryStripeOrdersWithCompletion:^(BOOL success, AWStripePurchaseInfo * _Nullable info, AWError * _Nullable error) {
-        [self hideLoading];
-        if (error) {
-          //do something
-            return;
-        }
-        //获取权益
-        if (info.entitlement) {
-        }
-    }];
+[AWPurchaseKit queryStripeOrdersWithCompletion:^(BOOL success, AWStripePurchaseInfo * _Nullable info, AWError * _Nullable error) {
+    if (error) {
+      //do something
+        return;
+    }
+    //获取权益
+    if (info.entitlement) {
+
+    }
+}];
 ```
 
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-    AWPurchaseKit.queryStripeOrders { success, info, error in
-                            //获取权益
-                            info?.entitlement
-                        }
+AWPurchaseKit.queryStripeOrders { success, info, error in
+    //获取权益
+    info?.entitlement
+}
 ```
 
   </TabItem>
