@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: 跨平台和App共享订阅指引
+title: App Sharing Subscription Guide
 id: sharing_subscriptions
 ---
 
@@ -10,6 +10,9 @@ import TabItem from '@theme/TabItem';
 同一AppWheel项目中的应用程序共享相同的登录用户ID命名空间，这意味着它们也共享订阅。在同一项目的不同应用程序中登录同一用户ID的用户将有权访问相同的权利。这允许在不同应用程序之间共享订阅状态，甚至在不同平台上也是如此。
 
 **请注意，匿名应用用户ID无法跨应用和平台共享订阅状态，因此您需要通过自己的身份验证系统使用自定义应用用户ID进行标识。**
+
+以下是简单图示
+![绑定](/img/sharingSubs/sharingSubs1.jpg)
 
 ## 前置条件
 
@@ -25,7 +28,8 @@ import TabItem from '@theme/TabItem';
 
 需要明确的是，应用商店或者支付平台间的壁垒是存在的，商品是不能跨支付平台购买的，比如在Google应用商店添加的商品，不可能用苹果应用商店账号支付；同理苹果应用商店的服务也不能通过Stripe购买。
 
-AppWheel支持的跨平台和App共享订阅，其本质是通过识别用户身份，将同一用户在不同App中的订阅状态查询并展示的过程，在熟悉前置条件中列举的内容和明确共享的实现方式后，按照以下步骤既可以实现订阅共享：
+AppWheel支持的跨平台和App共享订阅，其本质是通过识别用户身份，将同一用户在不同App中的订阅状态查询并展示的过程，(<font color="red"> **所以在同一个续订周期内，当在谷歌购买订阅解锁了权益的话，后续只能通过谷歌续订继续解锁权益，不能通过苹果的续订解锁。**</font>)
+在熟悉前置条件中列举的内容和明确共享的实现方式后，按照以下步骤既可以实现订阅共享：
 
 ### 1.在同一个项目下创建至少两个需要共享订阅的app，
 
@@ -33,15 +37,21 @@ AppWheel支持的跨平台和App共享订阅，其本质是通过识别用户身
 
 ### 2.商品添加到AppWheel，并配置到同一个Entitlements中
 
+请确保您已经完成[权益和产品配置](/ConfiguringProduct/entitlements)
+
 ![entitlement-sku](/img/tutorial/entitlements.png)
 
-### 3.安装SDK，并用相同的用户ID初始化SDK
+### 3.相同的用户ID初始化SDK
+
+现在你已经绑定了SKU和权益，可以在项目中使用他们了，首先确保你已经安装对应平台的SDK，SDK安装：[JS](/Installation/api.md)、[Android](/Installation/Android.md)、[iOS](/Installation/iOS.md)
+
+(<font color="red"> **注意：只有“userId”一样才能获取到跨端的权益**</font>)
 
 <Tabs>
   <TabItem value="Java" label="Java" default>
 
 ```Java
-Billing.configure(context,"appId","secret").setAppUserId("appUserId").build();
+Billing.configure(context,"appId","secret").setAppUserId("userId").build();
 ```
 
   </TabItem>
@@ -85,7 +95,7 @@ Billing.configure(context, "appid", "secret").setAppUserId("appUserId").build()
 ```Swift
 ///Please use the following method for versions older than 2.0.2.1.  
 AWPurchaseKit.configure(withAppId: appId, 
-                              uid: uid) { success, error in
+                              uid: userId) { success, error in
       if success == false {
         // init failed,check error
       } else {
@@ -96,7 +106,7 @@ AWPurchaseKit.configure(withAppId: appId,
  ///Use the following method for version 2.0.2.1 and above.
  AWPurchaseKit.configure(withAppId: appId, 
                             secret:appSecret, 
-                               uid: uid) { success, error in
+                               uid: userId) { success, error in
       if success == false {
         // init failed,check error
       } else {
@@ -108,30 +118,15 @@ AWPurchaseKit.configure(withAppId: appId,
   </TabItem>
 </Tabs>
 
-### 4.购买订阅
+### 4.购买
 
-利用Stripe订阅
+接下来需要在各端进行购买以此来解锁相对应的的权益
 
-<Tabs>
-<TabItem value="javascript" label="javascript">
+使用[JS购买](/MakingPurchases/JS.md)、[Android购买](/MakingPurchases/Android.md)、[iOS购买](/MakingPurchases/iOS.md)
 
-```javascript
-// See your keys here: https://dashboard.appwheel.com/projects/ and select app
-const appwheel = new AppWheel({AppID}, {platfrom}, {AppSecret})
-appwheel.createPurchase({
-    "appUserId": {appuserid},
-    "productId": {productId},
-    "successUrl": {successUrl},
-    "cancelUrl": {cancelUrl}
-}).then(res => res.json()).then(json => window.open(json.data.checkoutUrl))
-```
+### 5.查询权益
 
-  </TabItem>
-</Tabs>
-
-### 5.在另一个APP查询权益
-
-通过SDK查询跨端权益
+当你在任意一端已经购买了权益绑定的SKU的时候，这时候你可以在任意一端查询你已经拥有的权益从而去解锁你的VIP了
 
 <Tabs>
   <TabItem value="Java" label="Java" default>
