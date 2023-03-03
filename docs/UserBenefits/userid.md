@@ -91,10 +91,7 @@ AWPurchaseKit.configure(withAppId: appId,
  <TabItem value="javascript" label="javascript">
 
 ```javascript
-const appwheel = new AppWheel({AppID}, {platfrom}, {AppSecret})
-appwheel.initUser().then(res => res.json()).then((json) => {
-    console.log("初始化结果:", json)
-})
+// 不支持
 
 ```
 
