@@ -33,15 +33,21 @@ AppWheel支持的跨平台和App共享订阅，其本质是通过识别用户身
 
 ### 2.商品添加到AppWheel，并配置到同一个Entitlements中
 
+请确保您已经完成[权益和产品配置](/ConfiguringProduct/entitlements)
+
 ![entitlement-sku](/img/tutorial/entitlements.png)
 
 ### 3.安装SDK，并用相同的用户ID初始化SDK
+
+SDK安装：[JS](/Installation/api.md)、[Android](/Installation/Android.md)、[iOS](/Installation/iOS.md)
+
+(<font color="red"> **注意：只有“userId”一样才能获取到跨端的权益**</font>)
 
 <Tabs>
   <TabItem value="Java" label="Java" default>
 
 ```Java
-Billing.configure(context,"appId","secret").setAppUserId("appUserId").build();
+Billing.configure(context,"appId","secret").setAppUserId("userId").build();
 ```
 
   </TabItem>
@@ -85,7 +91,7 @@ Billing.configure(context, "appid", "secret").setAppUserId("appUserId").build()
 ```Swift
 ///Please use the following method for versions older than 2.0.2.1.  
 AWPurchaseKit.configure(withAppId: appId, 
-                              uid: uid) { success, error in
+                              uid: userId) { success, error in
       if success == false {
         // init failed,check error
       } else {
@@ -96,7 +102,7 @@ AWPurchaseKit.configure(withAppId: appId,
  ///Use the following method for version 2.0.2.1 and above.
  AWPurchaseKit.configure(withAppId: appId, 
                             secret:appSecret, 
-                               uid: uid) { success, error in
+                               uid: userId) { success, error in
       if success == false {
         // init failed,check error
       } else {

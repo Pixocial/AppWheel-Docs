@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-title: Stripe
-id: api
+title: JS
+id: JS
 ---
 
 完成订阅的支付后，可以通过Api获取当前订阅权益,配置在[权益和商品配置](/ConfiguringProduct/entitlements) 中将多个App商品与同一个权益关联，该接口还会返回其他端App的订阅状态。
