@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-title: Stripe
-id: stripe
+title: JS
+id: JS
 ---
 
 用户选择商品后，可以开始购买流程，接入方需要准备好回调地址，在用户付款成功后会回调到`successUrl`或者`cancelUrl`，接收到该回调后可以展示支付成功、跳转回订阅前的Web页面或者打开客户端程序。
