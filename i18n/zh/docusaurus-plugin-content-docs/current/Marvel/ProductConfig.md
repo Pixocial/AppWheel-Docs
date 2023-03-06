@@ -25,9 +25,9 @@ MarvelManager.getInstance().getProductConfig(countryCode, language, phrase, upda
 
 ```Kotlin
 MarvelManager.getInstance().getProductConfig(countryCode, language, phrase, update, effectiveFilter, timezoneOffset, object : AWHttpOriginalCallback{
-            override fun response(code: Int, data: String?) {
-            }
-        });
+      override fun response(code: Int, data: String?) {
+      }
+});
 ```
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
@@ -35,7 +35,7 @@ MarvelManager.getInstance().getProductConfig(countryCode, language, phrase, upda
 ```Objective-C 
 [[AWPurchaseKit getMarvelManager] getProductConfigWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
         
-    }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
@@ -43,7 +43,7 @@ MarvelManager.getInstance().getProductConfig(countryCode, language, phrase, upda
 ```Swift
 AWPurchaseKit.getMarvelManager().getProductConfig(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
-        }
+}
 ```
   </TabItem>
 </Tabs>

@@ -13,11 +13,11 @@ import TabItem from '@theme/TabItem';
 
 ```Java
 MarvelManager.getInstance().getHomeConfig(countryCode, language, phrase, update, effectiveFilter, timezoneOffset, new AWHttpOriginalCallback() {
-                @Override
-                public void response(int code, String data) {
+    @Override
+    public void response(int code, String data) {
 
-                }
-            });
+    }
+});
 ```
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
@@ -25,9 +25,9 @@ MarvelManager.getInstance().getHomeConfig(countryCode, language, phrase, update,
 ```Kotlin
 
 MarvelManager.getInstance().getHomeConfig(countryCode, language,phrase, update, effectiveFilter, timezoneOffset, object : AWHttpOriginalCallback{
-            override fun response(code: Int, data: String?) {
-            }
-        })
+    override fun response(code: Int, data: String?) {
+    }
+})
 ```
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
@@ -35,7 +35,7 @@ MarvelManager.getInstance().getHomeConfig(countryCode, language,phrase, update, 
 ```Objective-C 
  [[AWPurchaseKit getMarvelManager] getHomeConfigWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset completion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
         
-    }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
@@ -44,7 +44,7 @@ MarvelManager.getInstance().getHomeConfig(countryCode, language,phrase, update, 
 
 AWPurchaseKit.getMarvelManager().gethomeConfig(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
-        }
+}
 ```
   </TabItem>
 </Tabs>

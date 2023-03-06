@@ -36,7 +36,7 @@ MarvelManager.getInstance().advancedSwitch(countrycode,language,key,update,objec
 ```Objective-C 
 [[AWPurchaseKit getMarvelManager] getBannerWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withAbcodes:abcodes withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
-    }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
