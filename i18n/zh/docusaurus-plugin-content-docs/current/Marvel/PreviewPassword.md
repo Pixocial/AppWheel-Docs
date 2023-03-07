@@ -13,11 +13,11 @@ import TabItem from '@theme/TabItem';
 
 ```Java
 MarvelManager.getInstance().getPreviewPwd(new AWHttpOriginalCallback() {
-                @Override
-                public void response(int code, String data) {
-                    
-                }
-            });
+      @Override
+      public void response(int code, String data) {
+          
+      }
+});
 ```
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
@@ -25,9 +25,9 @@ MarvelManager.getInstance().getPreviewPwd(new AWHttpOriginalCallback() {
 ```Kotlin
 
 MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback{
-            override fun response(code: Int, data: String?) {
-            }
-        });
+      override fun response(code: Int, data: String?) {
+      }
+});
 ```
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
@@ -35,7 +35,7 @@ MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback{
 ```Objective-C 
 [[AWPurchaseKit getMarvelManager] getPreviewPwdWithCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
         
-    }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
@@ -43,7 +43,7 @@ MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback{
 ```Swift
 AWPurchaseKit.getMarvelManager().getPreviewPwd(){ result, errorMsg, data in
             
-        }
+}
 ```
   </TabItem>
 </Tabs>

@@ -36,7 +36,7 @@ MarvelManager.getInstance().manualUnlock(object : AWHttpOriginalCallback{
 ```Objective-C 
 [[AWPurchaseKit getMarvelManager] manualUnlockWithCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             });
-    }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">

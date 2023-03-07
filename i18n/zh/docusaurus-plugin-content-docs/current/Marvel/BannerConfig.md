@@ -13,13 +13,11 @@ import TabItem from '@theme/TabItem';
 
 ```Java
 MarvelManager.getInstance().getBanner(countryCode, language, abcodes, phrase, update, effectiveFilter, timezoneOffset, new AWHttpOriginalCallback() {
-                @Override
-                public void response(int code, String data) {
-                    
-                }
-            });
-///Remove listener
-UserOrderManager.getProvider().removePurchaseObserver(orderObserver);
+      @Override
+      public void response(int code, String data) {
+          
+      }
+});
 ```
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
@@ -37,7 +35,7 @@ MarvelManager.getInstance().getBanner(countryCode, language, abcodes,phrase, upd
 ```Objective-C 
 [[AWPurchaseKit getMarvelManager] getBannerWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withAbcodes:abcodes withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
-    }];
+}];
 ```
   </TabItem>
   <TabItem value="Swift" label="Swift">
@@ -46,7 +44,7 @@ MarvelManager.getInstance().getBanner(countryCode, language, abcodes,phrase, upd
 
 AWPurchaseKit.getMarvelManager().getBannerWithLanguage(language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withAbcodes: abcodes, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
-        }
+}
 ```
   </TabItem>
 </Tabs>
