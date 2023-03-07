@@ -105,6 +105,35 @@ function AppWheel(appid, platform, accessKey) {
             headers: this.sign("GET", url)
         })
     }
+    this.createPaymentMethod = function (body) {
+        body = JSON.stringify(body)
+        let url = `/v1/stripe/paymentMethod/create`
+        return fetch(this.baseUrl + url, {
+            method: "POST", body: body, headers: Object.assign(this.sign("POST", url, body), {"Content-Type": "application/json"})
+        })
+    }
+
+    this.removePaymentMethod = function (body) {
+        body = JSON.stringify(body)
+        let url = `/v1/stripe/paymentMethod/remove`
+        return fetch(this.baseUrl + url, {
+            method: "POST", body: body, headers: Object.assign(this.sign("POST", url, body), {"Content-Type": "application/json"})
+        })
+    }
+    this.paymentMethod = function (body) {
+        body = JSON.stringify(body)
+        let url = `/v1/stripe/paymentMethod`
+        return fetch(this.baseUrl + url, {
+            method: "POST", body: body, headers: Object.assign(this.sign("POST", url, body), {"Content-Type": "application/json"})
+        })
+    }
+    this.invoices = function (body) {
+        body = JSON.stringify(body)
+        let url = `/v1/stripe/invoices`
+        return fetch(this.baseUrl + url, {
+            method: "POST", body: body, headers: Object.assign(this.sign("POST", url, body), {"Content-Type": "application/json"})
+        })
+    }
 }
 
 
