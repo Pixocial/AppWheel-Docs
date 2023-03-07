@@ -8,6 +8,11 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Mar 7,2023
+##### version 1.1.1.0
+- 修改权益类名
+- 对分库进行优化重新整理
+
 #### Update - Jan 5,2023
 ##### version 1.0.20.0
 - 新增Marvel功能：高级开关、手动解锁
@@ -100,6 +105,14 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+#### Update - Mar 7,2023
+##### version 2.1.1.0
+- 新增分库：
+- - AppWheel/core：核心库
+- - AppWheel/purchase：购买库
+- - AppWheel/analytics：打点数据上报库
+- - AppWheel/marvel：marvel功能相关库
 
 #### Update - Jan 5,2023
 ##### version 2.0.13.0
