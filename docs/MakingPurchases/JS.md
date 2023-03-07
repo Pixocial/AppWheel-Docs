@@ -40,6 +40,9 @@ appwheel.createPurchase({
 |promotionCode| array &lt;string&gt; | 否 |优惠码，选填，目前只支持一个优惠码|
 更多Api接口[点击此处](/Installation/api)
 
+### 支付托管页面
+
+![付款](/img/stripePayments/stripe_create_pay.png)
 ### 下一步
 
 [订单和权益查询](/UserBenefits/api)
