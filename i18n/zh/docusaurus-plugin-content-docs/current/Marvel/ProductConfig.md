@@ -33,6 +33,9 @@ MarvelManager.getInstance().getProductConfig(countryCode, language, phrase, upda
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
+
+#import <AWMarvel/AWMarvel.h>
+......
 [[AWMarvelManager sharedInstance] getProductConfigWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
         
 }];
@@ -41,6 +44,9 @@ MarvelManager.getInstance().getProductConfig(countryCode, language, phrase, upda
   <TabItem value="Swift" label="Swift">
 
 ```Swift
+
+#import <AWMarvel/AWMarvel.h>
+......
 AWMarvelManager.sharedInstance().getProductConfig(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
 }
