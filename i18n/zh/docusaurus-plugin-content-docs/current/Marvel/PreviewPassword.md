@@ -57,9 +57,9 @@ AWPurchaseKit.getMarvelManager().getPreviewPwd(){ result, errorMsg, data in
 <table>
   <thead class="ant-table-thead">
     <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+      <th >>名称</th><th >>类型</th><th >>是否必须</th><th >>默认值</th><th >>备注</th><th >>其他信息</th>
     </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span ><span ></span> code</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr><tr key=0-1><td key=0><span ><span ></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr><tr key=0-1-0><td key=0><span ><span >├─</span> preview_pwd</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr><tr key=0-1-1><td key=0><span ><span >├─</span> ttl</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span >秒</span></td><td key=5></td></tr><tr key=0-2><td key=0><span ><span ></span> message</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr>
+  </thead><tbody className="ant-table-tbody"><tr >><td >><span ><span ></span> code</span></td><td >><span>number</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr><tr >><td >><span ><span ></span> data</span></td><td >><span>object</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr><tr >><td >><span ><span >├─</span> preview_pwd</span></td><td >><span>string</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr><tr >><td >><span ><span >├─</span> ttl</span></td><td >><span>number</span></td><td >>非必须</td><td >></td><td >><span >秒</span></td><td >></td></tr><tr >><td >><span ><span ></span> message</span></td><td >><span>string</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr>
                </tbody>
               </table>
 
