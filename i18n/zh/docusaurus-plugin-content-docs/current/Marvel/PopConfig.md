@@ -60,7 +60,7 @@ AWPurchaseKit.getMarvelManager().getPopupWithLanguage(language, withCountryCode:
 
 ### 返回数据
 
-<table>
+<table style={{'min-width':'1200px'}}>
   <thead class="ant-table-thead">
     <tr>
       <th >名称</th><th >类型</th><th >是否必须</th><th >默认值</th><th >备注</th><th >其他信息</th>

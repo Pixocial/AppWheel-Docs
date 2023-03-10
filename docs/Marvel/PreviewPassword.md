@@ -54,14 +54,60 @@ AWPurchaseKit.getMarvelManager().getPreviewPwd(){ result, errorMsg, data in
 
 ### 返回数据
 
-<table>
-  <thead class="ant-table-thead">
+<table style={{'min-width':'1200px'}}>
+<thead class="ant-table-thead">
     <tr>
-      <th >>名称</th><th >>类型</th><th >>是否必须</th><th >>默认值</th><th >>备注</th><th >>其他信息</th>
+        <th>名称</th>
+        <th>类型</th>
+        <th>是否必须</th>
+        <th>默认值</th>
+        <th>备注</th>
+        <th>其他信息</th>
     </tr>
-  </thead><tbody className="ant-table-tbody"><tr >><td >><span ><span ></span> code</span></td><td >><span>number</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr><tr >><td >><span ><span ></span> data</span></td><td >><span>object</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr><tr >><td >><span ><span >├─</span> preview_pwd</span></td><td >><span>string</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr><tr >><td >><span ><span >├─</span> ttl</span></td><td >><span>number</span></td><td >>非必须</td><td >></td><td >><span >秒</span></td><td >></td></tr><tr >><td >><span ><span ></span> message</span></td><td >><span>string</span></td><td >>非必须</td><td >></td><td >><span ></span></td><td >></td></tr>
-               </tbody>
-              </table>
+    </thead>
+    <tbody className="ant-table-tbody">
+    <tr>
+        <td>code</td>
+        <td><span>number</span></td>
+        <td>非必须</td>
+        <td></td>
+        <td><span></span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><span><span></span> data</span></td>
+        <td><span>object</span></td>
+        <td>非必须</td>
+        <td></td>
+        <td><span></span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><span><span>├─</span> preview_pwd</span></td>
+        <td><span>string</span></td>
+        <td>非必须</td>
+        <td></td>
+        <td><span></span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><span><span>├─</span> ttl</span></td>
+        <td><span>number</span></td>
+        <td>非必须</td>
+        <td></td>
+        <td><span>秒</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><span><span></span> message</span></td>
+        <td><span>string</span></td>
+        <td>非必须</td>
+        <td></td>
+        <td><span></span></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
 
 ### Example
 

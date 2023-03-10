@@ -69,7 +69,7 @@ AWPurchaseKit.getMarvelManager().getNewSubs(withLanguage:language, withCountryCo
 
 ### 返回数据
 
-<table>
+<table style={{'min-width':'1200px'}}>
     <thead class="ant-table-thead">
     <tr>
         <th>名称</th>

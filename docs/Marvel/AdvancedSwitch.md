@@ -1,9 +1,10 @@
 ---
 sidebar_position: 8
-title: 高级开关
+title: 高级开关（Deprecated）
 id: 高级开关
 ---
 
+**使用产品配置替代**
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
