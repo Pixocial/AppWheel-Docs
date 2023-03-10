@@ -57,6 +57,18 @@ AWPurchaseKit.getMarvelManager().getStartPage(withLanguage:language, withCountry
 - effectiveFilter： 传1新时区逻辑，不传为旧逻辑 （可空）
 - timezoneOffset： 用户时区偏移值，分钟为单位，服务端将根据该值计算用户时区的数据，可替代effective_filter，此时不会进入effective_filter逻辑（可空）
 
+### 返回数据
+
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th >名称</th><th >类型</th><th >是否必须</th><th >默认值</th><th >备注</th><th >其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr ><td ><span ><span ></span> code</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span ></span> data</span></td><td ><span>object []</span></td><td >非必须</td><td ></td><td ><span ></span></td><td ><p ><span >item 类型: </span><span>object</span></p></td></tr><tr ><td ><span ><span >├─</span> rid</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >远程配置id</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> sub_status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >订阅状态 1全部，2订阅中，3非订阅</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> user_status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >用户状态 1全部，2新用户，3非新用户		</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> device_level</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >机型等级 1低端，2中端，4高端，多选则相加，过滤&操作	</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> weight</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >权重</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> number</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >次数</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> duration</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >时长</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text_layer</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >文字图层url，注意是图片</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> media</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >媒体数据</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> type</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >img ｜ video</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> url</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> deeplink</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> ended_at</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >结束时间，时间戳(秒)，为0时代表无结束时间</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> trigger</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >频率</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> frequency</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >频率次数</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> cycle</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >频率周期:1天、2周、3月、4年</span></td><td ></td></tr><tr ><td ><span ><span ></span> message</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span ></span> update</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr>
+               </tbody>
+              </table>
+
+
 ### 返回
 ```Json
 {

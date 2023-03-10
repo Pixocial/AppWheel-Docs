@@ -12,23 +12,25 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Java" label="Java" default>
 
 ```Java
-MarvelManager.getInstance().getPreviewPwd(new AWHttpOriginalCallback() {
-      @Override
-      public void response(int code, String data) {
-          
-      }
-});
+MarvelManager.getInstance().getPreviewPwd(new AWHttpOriginalCallback(){
+@Override
+public void response(int code,String data){
+
+        }
+        });
 ```
+
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
 
-MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback{
-      override fun response(code: Int, data: String?) {
-      }
+MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback {
+    override fun response(code: Int, data: String?) {
+    }
 });
 ```
+
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
 
@@ -37,6 +39,7 @@ MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback{
         
 }];
 ```
+
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
@@ -45,10 +48,23 @@ AWPurchaseKit.getMarvelManager().getPreviewPwd(){ result, errorMsg, data in
             
 }
 ```
+
   </TabItem>
 </Tabs>
 
-### 返回
+### 返回数据
+
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span ><span ></span> code</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr><tr key=0-1><td key=0><span ><span ></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr><tr key=0-1-0><td key=0><span ><span >├─</span> preview_pwd</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr><tr key=0-1-1><td key=0><span ><span >├─</span> ttl</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span >秒</span></td><td key=5></td></tr><tr key=0-2><td key=0><span ><span ></span> message</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span ></span></td><td key=5></td></tr>
+               </tbody>
+              </table>
+
+### Example
+
 ```Json
 {
   "code": 0,

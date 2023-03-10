@@ -12,23 +12,25 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Java" label="Java" default>
 
 ```Java
-MarvelManager.getInstance().getHomeConfig(countryCode, language, phrase, update, effectiveFilter, timezoneOffset, new AWHttpOriginalCallback() {
-    @Override
-    public void response(int code, String data) {
+MarvelManager.getInstance().getHomeConfig(countryCode,language,phrase,update,effectiveFilter,timezoneOffset,new AWHttpOriginalCallback(){
+@Override
+public void response(int code,String data){
 
-    }
-});
+        }
+        });
 ```
+
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
 
-MarvelManager.getInstance().getHomeConfig(countryCode, language,phrase, update, effectiveFilter, timezoneOffset, object : AWHttpOriginalCallback{
+MarvelManager.getInstance().getHomeConfig(countryCode, language, phrase, update, effectiveFilter, timezoneOffset, object : AWHttpOriginalCallback {
     override fun response(code: Int, data: String?) {
     }
 })
 ```
+
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
 
@@ -37,6 +39,7 @@ MarvelManager.getInstance().getHomeConfig(countryCode, language,phrase, update, 
         
 }];
 ```
+
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
@@ -46,10 +49,12 @@ AWPurchaseKit.getMarvelManager().gethomeConfig(withLanguage:language, withCountr
             
 }
 ```
+
   </TabItem>
 </Tabs>
 
 ### 参数
+
 - language：语言
 - countryCode：国家
 - phrase： 预发布密码（可空）
@@ -57,7 +62,32 @@ AWPurchaseKit.getMarvelManager().gethomeConfig(withLanguage:language, withCountr
 - effectiveFilter： 传1新时区逻辑，不传为旧逻辑 （可空）
 - timezoneOffset： 用户时区偏移值，分钟为单位，服务端将根据该值计算用户时区的数据，可替代effective_filter，此时不会进入effective_filter逻辑（可空）
 
-### 返回
+### 返回数据
+
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th >名称</th><th >类型</th><th >是否必须</th><th >默认值</th><th >备注</th><th >其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr ><td ><span ><span ></span> code</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span ></span> data</span></td><td ><span>object</span></td><td >非必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> logo</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> list</span></td><td ><span>object []</span></td><td >必须</td><td ></td><td ><span >模块列表</span></td><td ><p ><span >item 类型: </span><span>object</span></p></td></tr><tr ><td ><span ><span >├─</span> user_status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >用户状态 1-全部，2-新用户，3-老用户</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> sub_status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >订阅状态 1-全部，2-订阅，3-非订阅</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> rid</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >远程配置id</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> type</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >模版类型
+Banner
+  - HPB Banner
+  - HPB_TOP 顶部轮播图
+  - HPB_AD 广告
+专题
+  - 配方 HPB_TEM
+  - 贴纸 HPB_STI
+  - 贴纸包 HPB_STIP
+  - 涂鸦笔 HPB_BRU
+  - 文字样式 HPB_TEX
+  - 滤镜 HPB_FIL
+  - AR HPB_ARR
+  - 视频配方 HPB_STX</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> sort</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >排序值</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text_content</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >文字 HPB类型时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> en</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >语言</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> title</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >标题</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >文案</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> color_value</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >色值</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text_layer</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >文字图层 HPB类型时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> en</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >语言</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> media</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >图片｜视频</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> type</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >img ｜ video	</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> url</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> ratio</span></td><td ><span>string</span></td><td >非必须</td><td ></td><td ><span >宽高比（⚠️废弃，使用size）</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> size</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >尺寸 HPB, HPB_AD时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> marvellink</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >marvellink HPB，HPB_AD时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> link_type</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span > HPB时使用 链接类型 1-webviewURL, 2-deepLink,3-外链 URL</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> abcode</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> background_color</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >背景色 专题类型时存在</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> effective_time</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >生效时间</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >是否开启生效时间，1是，2否</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> info</span></td><td ><span>number []</span></td><td >必须</td><td ></td><td ><span >开始时间戳--结束时间戳</span></td><td ><p ><span >item 类型: </span><span>number</span></p></td></tr><tr ><td ><span ><span >├─</span> </span></td><td ><span></span></td><td >非必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> sub</span></td><td ><span>object []</span></td><td >必须</td><td ></td><td ><span >Banner子集，HPB_TOP下使用</span></td><td ><p ><span >item 类型: </span><span>object</span></p></td></tr><tr ><td ><span ><span >├─</span> name</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >名称</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> user_status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >用户状态 1-全部，2-新用户，3-老用户</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> sub_status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >订阅状态 1-全部，2-订阅，3-非订阅</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> rid</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> sort</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >排序权重</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text_content</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >文字</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> en</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >语言</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> title</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >标题</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >文案</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> color_value</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >色值</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> text_layer</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >文字图层</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> en</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >语言</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> media</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >图片｜视频</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> type</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >img ｜ video	</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> url</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> abcode</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> background_color</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >背景色</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> effective_time</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >生效时间</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> status</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >是否开启生效时间，1是，2否</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> info</span></td><td ><span>number []</span></td><td >必须</td><td ></td><td ><span >开始时间戳--结束时间戳</span></td><td ><p ><span >item 类型: </span><span>number</span></p></td></tr><tr ><td ><span ><span >├─</span> </span></td><td ><span></span></td><td >非必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> marvellink</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >链接</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> link_type</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >链接类型 1-webviewURL, 2-deepLink,3-外链 URL	</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> cover_img</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >视频封面图</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> pag</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >pag文件</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> url</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> title</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >标题；类型为专题下的类型时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> subtitle</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >副标题；类型为专题下的类型时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> show_title</span></td><td ><span>boolean</span></td><td >必须</td><td ></td><td ><span >是否显示标题；类型为专题下的类型时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> head_img</span></td><td ><span>object</span></td><td >必须</td><td ></td><td ><span >头图；类型为专题下的类型时使用</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> url</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >地址</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> ratio</span></td><td ><span>string</span></td><td >非必须</td><td ></td><td ><span >宽高比，不存在时返回空字符串</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> custom_config</span></td><td ><span>object []</span></td><td >必须</td><td ></td><td ><span >自定义配置；类型为专题下的类型且存在pag时使用</span></td><td ><p ><span >item 类型: </span><span>object</span></p></td></tr><tr ><td ><span ><span >├─</span> type</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >1文案(字符串) 2数字 3 bool 4 图片 注意首页中目前只有1，4两个类型</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> key</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span >├─</span> value</span></td><td ><span>可变类型</span></td><td >必须</td><td ></td><td ><span >根据type有不同类型，1，4均为str</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> material_content</span></td><td ><span>object []</span></td><td >必须</td><td ></td><td ><span >素材内容；类型为专题下的类型时使用</span></td><td ><p ><span >item 类型: </span><span>object</span></p></td></tr><tr ><td ><span ><span >├─</span> m_id</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >素材id</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> tag</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >NEW HOT 空字符</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> is_paid</span></td><td ><span>number</span></td><td >必须</td><td ></td><td ><span >1付费0免费</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> img</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >图片，静态图</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> color</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >配色</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> img_ratio</span></td><td ><span>string</span></td><td >非必须</td><td ></td><td ><span >图片宽高比，注意部分专题类型不存在，仅保证配方存在，不存在时返回空字符串</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> cover_video</span></td><td ><span>string</span></td><td >非必须</td><td ></td><td ><span >封面视频，视频配方存在</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> cover_img</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span >视频封面图</span></td><td ></td></tr><tr ><td ><span ><span ></span> message</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr><tr ><td ><span ><span ></span> update</span></td><td ><span>string</span></td><td >必须</td><td ></td><td ><span ></span></td><td ></td></tr>
+               </tbody>
+              </table>
+
+### Example
+
 ```Json
 {
   "code": 0,

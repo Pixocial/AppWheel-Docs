@@ -53,7 +53,8 @@ AWPurchaseKit.getMarvelManager().manualUnlock{ result, errorMsg, data in
 ### 参数
 无
 
-### 返回
+
+### Example
 ```Json
 {
   "vip_expires_date": 0

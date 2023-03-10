@@ -94,3 +94,33 @@ AWMarvelManager.sharedInstance().getProductConfig(withLanguage:language, withCou
   <tr  ><td  ><span  ><span  ></span> update</span></td><td  ><span>string</span></td><td  >必须</td><td  ></td><td  ><span  >数据的md5值</span></td><td  ></td></tr>
    </tbody>
  </table>
+
+
+### Example
+```json
+{
+  "code": 0,
+  "data": {
+    "rid": "BP_CON_00000049",
+    "sub_status": 1,
+    "user_status": 1,
+    "device_level": 1,
+    "p_protocol": "",
+    "u_protocol": "",
+    "p_trigger": 1,
+    "u_trigger": 1,
+    "cus_config": [
+      {
+        "key": "",
+        "type": 1,
+        "value": ""
+      }
+    ],
+    "created_at": 1660817040,
+    "updated_at": 1660817040,
+    "ended_at": 0
+  },
+  "message": "success",
+  "update": "2c6456f5464e9c41677c4eb0919f9e23"
+}
+```
