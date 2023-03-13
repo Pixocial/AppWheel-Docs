@@ -36,7 +36,10 @@ MarvelManager.getInstance().getNewSubs(countryCode, language, phrase, update, ef
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getNewSubsWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] getNewSubsWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
 }];
 ```
@@ -45,7 +48,10 @@ MarvelManager.getInstance().getNewSubs(countryCode, language, phrase, update, ef
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.getMarvelManager().getNewSubs(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
+
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().getNewSubs(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
 }
 ```

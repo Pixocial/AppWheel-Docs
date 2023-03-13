@@ -34,7 +34,10 @@ MarvelManager.getInstance().manualUnlock(object : AWHttpOriginalCallback{
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] manualUnlockWithCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] manualUnlockWithCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             });
 }];
 ```
@@ -43,7 +46,9 @@ MarvelManager.getInstance().manualUnlock(object : AWHttpOriginalCallback{
 
 ```Swift
 
-AWPurchaseKit.getMarvelManager().manualUnlock{ result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().manualUnlock{ result, errorMsg, data in
     
 }
 ```

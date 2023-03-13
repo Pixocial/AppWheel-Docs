@@ -34,7 +34,9 @@ MarvelManager.getInstance().getPopup(countryCode, language,phrase, update, effec
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getPopupWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] getPopupWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
 }];
 ```
@@ -42,7 +44,9 @@ MarvelManager.getInstance().getPopup(countryCode, language,phrase, update, effec
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.getMarvelManager().getPopupWithLanguage(language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().getPopupWithLanguage(language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
 }
 
@@ -227,7 +231,7 @@ MarvelManager.getInstance().getPopupPreview(rid, countryCode, language, object :
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getPopupPreviewWithRid:rid WithLanguage:language withCountryCode:countryCode withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+[[AWMarvelManager sharedInstance] getPopupPreviewWithRid:rid WithLanguage:language withCountryCode:countryCode withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
     }];
 ```
@@ -236,7 +240,7 @@ MarvelManager.getInstance().getPopupPreview(rid, countryCode, language, object :
 
 ```Swift
 
-AWPurchaseKit.getMarvelManager().getPopupPreview(withRid: rid, withLanguage: language, withCountryCode: countryCode){ result, errorMsg, data in
+AWMarvelManager.sharedInstance().getPopupPreview(withRid: rid, withLanguage: language, withCountryCode: countryCode){ result, errorMsg, data in
             
         }
 ```

@@ -35,7 +35,10 @@ MarvelManager.getInstance().getHomeConfig(countryCode, language, phrase, update,
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
- [[AWPurchaseKit getMarvelManager] getHomeConfigWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset completion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+
+#import <AWMarvel/AWMarvel.h>
+......
+ [[AWMarvelManager sharedInstance] getHomeConfigWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset completion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
         
 }];
 ```
@@ -45,7 +48,9 @@ MarvelManager.getInstance().getHomeConfig(countryCode, language, phrase, update,
 
 ```Swift
 
-AWPurchaseKit.getMarvelManager().gethomeConfig(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().gethomeConfig(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
 }
 ```

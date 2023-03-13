@@ -33,7 +33,9 @@ MarvelManager.getInstance().getBanner(countryCode, language, abcodes,phrase, upd
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getBannerWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withAbcodes:abcodes withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] getBannerWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withAbcodes:abcodes withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
 }];
 ```
@@ -42,7 +44,9 @@ MarvelManager.getInstance().getBanner(countryCode, language, abcodes,phrase, upd
 
 ```Swift
 
-AWPurchaseKit.getMarvelManager().getBannerWithLanguage(language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withAbcodes: abcodes, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().getBannerWithLanguage(language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withAbcodes: abcodes, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
 }
 ```

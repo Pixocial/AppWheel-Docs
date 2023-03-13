@@ -33,7 +33,10 @@ MarvelManager.getInstance().getStartPage(countryCode, language, phrase, update, 
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getStartPageWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] getStartPageWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
 }];
 ```
@@ -42,7 +45,9 @@ MarvelManager.getInstance().getStartPage(countryCode, language, phrase, update, 
 
 ```Swift
 
-AWPurchaseKit.getMarvelManager().getStartPage(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().getStartPage(withLanguage:language, withCountryCode: countryCode, withPhrase: phrase, withUpdate: update, withEffectiveFilter: effectiveFilter, withTimezoneOffset: timezoneOffset) { result, errorMsg, data in
             
 }
 ```

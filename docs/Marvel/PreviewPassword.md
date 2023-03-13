@@ -35,7 +35,9 @@ MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback {
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getPreviewPwdWithCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] getPreviewPwdWithCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
         
 }];
 ```
@@ -44,7 +46,9 @@ MarvelManager.getInstance().getPreviewPwd(object : AWHttpOriginalCallback {
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.getMarvelManager().getPreviewPwd(){ result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().getPreviewPwd(){ result, errorMsg, data in
             
 }
 ```

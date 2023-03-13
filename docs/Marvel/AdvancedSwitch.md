@@ -35,7 +35,10 @@ MarvelManager.getInstance().advancedSwitch(countrycode,language,key,update,objec
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[[AWPurchaseKit getMarvelManager] getBannerWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withAbcodes:abcodes withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
+
+#import <AWMarvel/AWMarvel.h>
+......
+[[AWMarvelManager sharedInstance] getBannerWithLanguage:language withCountryCode:countryCode withPhrase:phrase withUpdate:update withAbcodes:abcodes withEffectiveFilter:effectiveFilter withTimezoneOffset:timezoneOffset withCompletion:^(NSInteger result, NSString * _Nonnull errorMsg, NSDictionary * _Nullable data) {
             
 }];
 ```
@@ -44,7 +47,9 @@ MarvelManager.getInstance().advancedSwitch(countrycode,language,key,update,objec
 
 ```Swift
 
-AWPurchaseKit.getMarvelManager().advancedSwitch(with: language, withCountryCode: countryCode, withKey: key, withUpdate: update){ result, errorMsg, data in
+#import <AWMarvel/AWMarvel.h>
+......
+AWMarvelManager.sharedInstance().advancedSwitch(with: language, withCountryCode: countryCode, withKey: key, withUpdate: update){ result, errorMsg, data in
     
 }
 ```
