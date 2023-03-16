@@ -189,5 +189,5 @@ AWPurchaseKit.configure(withAppId: appId,
 
 **请注意，匿名应用用户ID无法跨应用和平台共享订阅状态，因此您需要通过自己的身份验证系统使用自定义应用用户ID进行标识。**
 
-[更多请看](/UserBenefits/sharing_subscriptions)
+[更多请看](/sharing_subscriptions)
 
