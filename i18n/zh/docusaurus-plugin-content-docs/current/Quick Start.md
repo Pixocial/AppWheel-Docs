@@ -227,9 +227,9 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ### 第四步：发起订阅
 
-[发起订阅](/MakingPurchases/stripe)
+[发起订阅](/MakingPurchases/js)
 
 ### 第五步：查询权益解锁功能
 
-[查询权益](/UserBenefits/api)
+[查询权益](/UserBenefits/js)
 

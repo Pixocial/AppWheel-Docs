@@ -45,4 +45,4 @@ appwheel.createPurchase({
 ![付款](/img/stripePayments/stripe_create_pay.png)
 ### 下一步
 
-[订单和权益查询](/UserBenefits/api)
+[订单和权益查询](/UserBenefits/js)

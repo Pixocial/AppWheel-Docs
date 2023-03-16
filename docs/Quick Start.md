@@ -241,3 +241,26 @@ AWPurchaseKit.remove(AWPurchaseObserver)
   </TabItem>
 </Tabs>
 
+
+
+## Stripe
+
+### 第一步：配置应用
+
+[配置应用](/Projects/stripe)
+
+### 第二步：创建SKU
+
+[配置商品](/ConfiguringProduct/stripe-sku)
+
+### 第三步：接口对接
+
+[接口对接](/Installation/api)
+
+### 第四步：发起订阅
+
+[发起订阅](/MakingPurchases/js)
+
+### 第五步：查询权益解锁功能
+
+[查询权益](/UserBenefits/js)
