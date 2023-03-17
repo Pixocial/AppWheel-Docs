@@ -42,7 +42,7 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 
 ![Overall Process](/img/integration/p8.png)
 
-**Service Account credentials JSON:** A file with a .p8 suffix, commonly called a p8 file. When you need to enable the subscription discount function, you need to have a signature for the discount, and the p8 file is an essential key to generate this signature. Obtain it through: [https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
+**Service Account credentials File:** A file with a .p8 suffix, commonly called a p8 file. When you need to enable the subscription discount function, you need to have a signature for the discount, and the p8 file is an essential key to generate this signature. Obtain it through: [https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
 
 [//]: # (#### Product Configuration)
 

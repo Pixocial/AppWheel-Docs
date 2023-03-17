@@ -50,7 +50,7 @@ slug: /
 
 ![Overall Process](/img/integration/p8.png)
 
-**Service Account credentials JSON:**
+**Service Account credentials File:**
 一个后缀为.p8的文件，通常称为p8文件。当您需要启用订阅的优惠功能时需要对当前的优惠有个签名，p8文件就是生成这个签名的必不可少的key。获取方式：[https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
 
 [//]: # (#### 商品配置)
