@@ -25,13 +25,13 @@ You can customize your project name and icon。
 
 ### iOS
 
-[Read More](/#ios-integration)
+[Read More](/ProjectsAndApps/Platforms/iOS.md)
 
 ### Android
 
-[Read More](/#android-integration)
+[Read More](/ProjectsAndApps/Platforms/Android.md)
 
 ### Stripe
 
-[Read More](/Projects/stripe)
+[Read More](/ProjectsAndApps/Platforms/Stripe.md)
 

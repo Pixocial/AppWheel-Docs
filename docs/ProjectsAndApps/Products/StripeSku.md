@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Stripe商品配置
 id: stripe-sku
 ---

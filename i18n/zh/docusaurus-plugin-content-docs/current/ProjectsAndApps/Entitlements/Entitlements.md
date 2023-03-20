@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 title: Entitlements
 id: entitlements
 ---
@@ -46,7 +46,7 @@ id: entitlements
 
 ## 关联产品和权益
 
-创建权益后，应将产品附加到权益（请确保您已创建产品：[Android](ConfiguringProduct/androidSku.md)、[iOS](ConfiguringProduct/iossku.md)、[Stripe](ConfiguringProduct/StripeSku.md)）。这让AppWheel知道在用户购买特定产品后要解锁哪些权限。
+创建权益后，应将产品附加到权益（请确保您已创建产品：[Android](/ProjectsAndApps/Products/androidSku.md)、[iOS](/ProjectsAndApps/Products/iossku.md)、[Stripe](/ProjectsAndApps/Products/StripeSku.md)）。这让AppWheel知道在用户购买特定产品后要解锁哪些权限。
 
 查看授权时，单击编辑按钮以附加产品。如果您已经添加了您的产品，则可以从列表中选择一个要附加的产品。
 
