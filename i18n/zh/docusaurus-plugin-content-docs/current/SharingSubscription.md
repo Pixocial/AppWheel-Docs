@@ -21,8 +21,8 @@ import TabItem from '@theme/TabItem';
 - [项目和应用](/Projects)
 - [权益和产品配置](/ConfiguringProduct/entitlements)
 - [用户身份识别](/UserBenefits/user-ids)
-- [购买](/MakingPurchases/stripe)
-- [权益查询](/UserBenefits/api)
+- [购买](/MakingPurchases/js)
+- [权益查询](/UserBenefits/js)
 
 ## 开始步骤
 

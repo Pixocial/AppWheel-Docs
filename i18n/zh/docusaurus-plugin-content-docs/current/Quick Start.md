@@ -50,13 +50,15 @@ slug: /
 
 ![Overall Process](/img/integration/p8.png)
 
-**Service Account credentials JSON:**
+**Service Account credentials File:**
 一个后缀为.p8的文件，通常称为p8文件。当您需要启用订阅的优惠功能时需要对当前的优惠有个签名，p8文件就是生成这个签名的必不可少的key。获取方式：[https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
 
-#### 商品配置
+[//]: # (#### 商品配置)
 
-- 对接前已有商品配置
-- 对接前没有商品配置
+[//]: # ()
+[//]: # (- 对接前已有商品配置)
+
+[//]: # (- 对接前没有商品配置)
 
 ### 第三步：环境安装
 
@@ -112,30 +114,44 @@ slug: /
 - 非续期订阅商品
 - 是否能通过 appwheel sdk 恢复商品信息
 
-### 其它步骤：对接高级功能
+[//]: # (### 其它步骤：对接高级功能)
 
-#### 发券机
+[//]: # ()
+[//]: # (#### 发券机)
 
-##### 获取优惠券
+[//]: # ()
+[//]: # (##### 获取优惠券)
 
-说明：开发者应当在需要展示优惠券前尽可能早的请求优惠券的信息
+[//]: # ()
+[//]: # (说明：开发者应当在需要展示优惠券前尽可能早的请求优惠券的信息)
 
-```Objective-C
-AWPurchaseKit queryCouponDetail:((^)(BOOL success,AWCouponModel * _Nullable model, AWError * _Nullable error))completion
-```
+[//]: # ()
+[//]: # (```Objective-C)
 
-返回的AWCouponModel数据结构，请见文档： AppWheel SDK Integration Document - Introduction to iOS Classes
+[//]: # (AWPurchaseKit queryCouponDetail:&#40;&#40;^&#41;&#40;BOOL success,AWCouponModel * _Nullable model, AWError * _Nullable error&#41;&#41;completion)
 
-##### 消耗优惠码
+[//]: # (```)
 
-说明：开发者应该在展示过优惠券之后主动把taskId上报给AW，才能完成统计。
+[//]: # ()
+[//]: # (返回的AWCouponModel数据结构，请见文档： AppWheel SDK Integration Document - Introduction to iOS Classes)
 
-```Objective-C
-AWPurchaseKit updateConponStateWithTaskId:(long)taskId
-           withCompletion:((^)(BOOL success, AWError * _Nullable error))completion
-```
+[//]: # ()
+[//]: # (##### 消耗优惠码)
 
-参数:taskId,由获取优惠券的接口得到的AWCouponModel.taskId得到
+[//]: # ()
+[//]: # (说明：开发者应该在展示过优惠券之后主动把taskId上报给AW，才能完成统计。)
+
+[//]: # ()
+[//]: # (```Objective-C)
+
+[//]: # (AWPurchaseKit updateConponStateWithTaskId:&#40;long&#41;taskId)
+
+[//]: # (           withCompletion:&#40;&#40;^&#41;&#40;BOOL success, AWError * _Nullable error&#41;&#41;completion)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (参数:taskId,由获取优惠券的接口得到的AWCouponModel.taskId得到)
 
 ## Android对接
 
@@ -227,9 +243,9 @@ AWPurchaseKit updateConponStateWithTaskId:(long)taskId
 
 ### 第四步：发起订阅
 
-[发起订阅](/MakingPurchases/stripe)
+[发起订阅](/MakingPurchases/js)
 
 ### 第五步：查询权益解锁功能
 
-[查询权益](/UserBenefits/api)
+[查询权益](/UserBenefits/js)
 

@@ -42,11 +42,13 @@ When your app has a discount set in the Apple App Store, and you want to sync th
 
 ![Overall Process](/img/integration/p8.png)
 
-**Service Account credentials JSON:** A file with a .p8 suffix, commonly called a p8 file. When you need to enable the subscription discount function, you need to have a signature for the discount, and the p8 file is an essential key to generate this signature. Obtain it through: [https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
+**Service Account credentials File:** A file with a .p8 suffix, commonly called a p8 file. When you need to enable the subscription discount function, you need to have a signature for the discount, and the p8 file is an essential key to generate this signature. Obtain it through: [https://help.apple.com/app-store-connect/#/dev689c93225](https://help.apple.com/app-store-connect/#/dev689c93225])
 
-#### Product Configuration
-- There's already a product configuration
-- No product configuration
+[//]: # (#### Product Configuration)
+
+[//]: # (- There's already a product configuration)
+
+[//]: # (- No product configuration)
 
 ### Step 3: Setting up the Installation Environment
 
@@ -101,28 +103,42 @@ If your project is a Swift project, then you need to [import Objective-C into Sw
 - Non-renewable products
 - Whether the AppWheel SDK can restore product information
 
-### Other steps: Integration of advanced features
-#### Voucher machine
-##### Obtain coupons
-Description: Developers should request coupon information as early as possible when necessary.
+[//]: # (### Other steps: Integration of advanced features)
 
-```Objective-C
-AWPurchaseKit queryCouponDetail:((^)(BOOL success,AWCouponModel * _Nullable model, AWError * _Nullable error))completion
-```
+[//]: # (#### Voucher machine)
 
+[//]: # (##### Obtain coupons)
 
-For the returned AWCouponModel data structure, please refer to document: AppWheel SDK Integration Document - Introduction to iOS Classes 
+[//]: # (Description: Developers should request coupon information as early as possible when necessary.)
 
-##### Consume coupon code
-Note: The developer should report the task ID to AppWheel after displaying the coupon to complete the statistics.
+[//]: # ()
+[//]: # (```Objective-C)
 
-```Objective-C
-AWPurchaseKit updateConponStateWithTaskId:(long)taskId
-           withCompletion:((^)(BOOL success, AWError * _Nullable error))completion
-```
+[//]: # (AWPurchaseKit queryCouponDetail:&#40;&#40;^&#41;&#40;BOOL success,AWCouponModel * _Nullable model, AWError * _Nullable error&#41;&#41;completion)
 
+[//]: # (```)
 
-Parameter: taskId. The value of AWCouponModel, which is obtained from calling the coupon interface.
+[//]: # ()
+[//]: # ()
+[//]: # (For the returned AWCouponModel data structure, please refer to document: AppWheel SDK Integration Document - Introduction to iOS Classes )
+
+[//]: # ()
+[//]: # (##### Consume coupon code)
+
+[//]: # (Note: The developer should report the task ID to AppWheel after displaying the coupon to complete the statistics.)
+
+[//]: # ()
+[//]: # (```Objective-C)
+
+[//]: # (AWPurchaseKit updateConponStateWithTaskId:&#40;long&#41;taskId)
+
+[//]: # (           withCompletion:&#40;&#40;^&#41;&#40;BOOL success, AWError * _Nullable error&#41;&#41;completion)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # ()
+[//]: # (Parameter: taskId. The value of AWCouponModel, which is obtained from calling the coupon interface.)
 
 ## Android Integration
 ### Step 1: Create an app
@@ -241,3 +257,26 @@ AWPurchaseKit.remove(AWPurchaseObserver)
   </TabItem>
 </Tabs>
 
+
+
+## Stripe
+
+### 第一步：配置应用
+
+[配置应用](/Projects/stripe)
+
+### 第二步：创建SKU
+
+[配置商品](/ConfiguringProduct/stripe-sku)
+
+### 第三步：接口对接
+
+[接口对接](/Installation/api)
+
+### 第四步：发起订阅
+
+[发起订阅](/MakingPurchases/js)
+
+### 第五步：查询权益解锁功能
+
+[查询权益](/UserBenefits/js)
