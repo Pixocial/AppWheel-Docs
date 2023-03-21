@@ -24,8 +24,8 @@ id: stripe-sku
 对于AppWheel，建议使用权限映射SKU和用户权限之间的关系；例如，按月付款的计划和按年付款的计划对应于相同的会员权益。
 **同时，您可以在相同权限下在应用程序中交叉查询订单，从而可以根据需要进行跨终端购买。**
 
-[Read More](/ConfiguringProduct/entitlements)
+[Read More](/ProjectsAndApps/Entitlements/)
 
 ## 下一步
 
-[在应用获取商品](/DisplayingProducts/Stripe)
+[在应用获取商品](/DisplayingProducts/JS)

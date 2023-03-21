@@ -231,15 +231,15 @@ slug: /
 
 ### 第一步：配置应用
 
-[配置应用](/Projects/stripe)
+[配置应用](/ProjectsAndApps/Platforms/stripe)
 
 ### 第二步：创建SKU
 
-[配置商品](/ConfiguringProduct/stripe-sku)
+[配置商品](/ProjectsAndApps/Products/stripe-sku)
 
 ### 第三步：接口对接
 
-[接口对接](/Installation/api)
+[接口对接](/Installation/JS)
 
 ### 第四步：发起订阅
 

@@ -35,5 +35,5 @@ id: stripe
 - invoice.finalized
 - invoice.payment_succeeded
 
-**为了完成购买，需要配置SKU和权益，请参考[权益和产品](/ConfiguringProduct/entitlements)**
+**为了完成购买，需要配置SKU和权益，请参考[权益和产品](/ProjectsAndApps/Entitlements/)**
 
