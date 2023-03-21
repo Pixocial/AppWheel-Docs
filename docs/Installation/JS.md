@@ -8,6 +8,10 @@ import TabItem from '@theme/TabItem';
 
 AppWheel支持Stripe支付，支持Api接口，并以Web形式的页面支付，提供JS SDK。
 
+### 获取接口秘钥
+![img.png](/img/tutorial/api_key.png)
+
+
 <Tabs>
   <TabItem value="Javascript" label="Javascript">
 

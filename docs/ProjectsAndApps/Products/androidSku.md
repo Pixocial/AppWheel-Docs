@@ -13,7 +13,7 @@ id: android-sku
 - 3.保存ProductId到AppWheel
   ![android](/img/stripePayments/create_sku.png)
 - 4.增加权益关联
-- [Read More](/ConfiguringProduct/entitlements)
+- [Read More](/ProjectsAndApps/Entitlements/)
 
 ## 下一步
 

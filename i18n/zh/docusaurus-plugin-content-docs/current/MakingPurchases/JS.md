@@ -38,7 +38,7 @@ appwheel.createPurchase({
 | cancelUrl | string | 是 | 取消支付的回调地址 |
 | trialPeriodDays | int | 否 | 免费试用天数 |
 |promotionCode| array &lt;string&gt; | 否 |优惠码，选填，目前只支持一个优惠码|
-更多Api接口[点击此处](/Installation/api)
+更多Api接口[点击此处](/Installation/JS)
 
 ### 下一步
 

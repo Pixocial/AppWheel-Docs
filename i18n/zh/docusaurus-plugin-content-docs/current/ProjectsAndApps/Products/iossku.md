@@ -15,7 +15,7 @@ id: apple-sku
 - 4.保存ProductId到AppWheel
   ![iso](/img/stripePayments/create_sku.png)
 - 5.增加权益关联
-- [Read More](/ConfiguringProduct/entitlements)
+- [Read More](/ProjectsAndApps/Entitlements/)
 
 ## 下一步
 

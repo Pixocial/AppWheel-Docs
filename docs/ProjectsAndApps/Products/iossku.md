@@ -6,6 +6,8 @@ id: apple-sku
 
 # 苹果商品配置
 
+**详细操作可以参考官方[文档和说明](https://help.apple.com/app-store-connect/#/devae49fb316)**
+
 - 1.点击订阅
   ![ios](/img/tutorial/iossku1.png)
 - 2.增加商品组
@@ -15,7 +17,8 @@ id: apple-sku
 - 4.保存ProductId到AppWheel
   ![iso](/img/stripePayments/create_sku.png)
 - 5.增加权益关联
-- [Read More](/ConfiguringProduct/entitlements)
+
+  [Read More](/ProjectsAndApps/Entitlements/)
 
 ## 下一步
 
