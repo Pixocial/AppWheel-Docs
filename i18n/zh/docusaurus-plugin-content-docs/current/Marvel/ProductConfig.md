@@ -75,7 +75,7 @@ AWMarvelManager.sharedInstance().getProductConfig(withLanguage:language, withCou
    </thead>
    <tbody className="ant-table-tbody">
     <tr ><td  ><span ><span ></span> code</span></td><td  ><span>number</span></td><td  >必须</td><td  ></td><td  ><span >0成功 其他失败</span></td><td  ></td></tr>
-    <tr  ><td  ><span ><span ></span> data</span></td><td  ><span>object[]</span></td><td  >必须</td><td  ></td><td  ><span >成功是必填，失败时无data，无数据空对象</span></td><td  ></td></tr>
+    <tr  ><td  ><span ><span ></span> data</span></td><td  ><span>object[]</span></td><td  >必须</td><td  ></td><td  ><span >成功是必填，失败时无data，无数据空数组</span></td><td  ></td></tr>
     <tr  ><td  ><span  ><span  >├─</span> rid</span></td><td  ><span>string</span></td><td  >必须</td><td  ></td><td  ><span  >远程配置id</span></td><td  ></td></tr>
   <tr  ><td  ><span  ><span  >├─</span> sub_status</span></td><td  ><span>number</span></td><td  >必须</td><td  ></td><td  ><span  >订阅状态 1全部，2订阅中，3非订阅</span></td><td  ></td></tr>
   <tr  ><td  ><span  ><span  >├─</span> user_status</span></td><td  ><span>number</span></td><td  >必须</td><td  ></td><td  ><span  >用户状态 1全部，2新用户，3非新用户</span></td><td  ></td></tr>
