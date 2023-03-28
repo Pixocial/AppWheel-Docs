@@ -13,24 +13,24 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Java" label="Java" default>
 
 ```Java
-Market.getInstance().getTrending(lanaguage, type, new Callback() {
-    @Override
-    public void onFailure(Call call, IOException e) {
+Market.getInstance().getTrending(lanaguage,type,new Callback(){
+@Override
+public void onFailure(Call call,IOException e){
 
-    }
+        }
 
-    @Override
-    public void onResponse(Call call, Response response) throws IOException {
+@Override
+public void onResponse(Call call,Response response)throws IOException{
 
-    }
-});
+        }
+        });
 ```
 
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
-Market.getInstance().getTrending(language,type,object : Callback{
+Market.getInstance().getTrending(language, type, object : Callback {
     override fun onFailure(call: Call?, e: IOException?) {
     }
 
@@ -64,14 +64,35 @@ AWPurchaseKit.getTrendingWithLanguage(language, withType: type) { success, data,
 
 **Query**
 
-| 参数名称             | 是否必须 | 示例  | 备注                                                                        |
-|------------------|------|-----|---------------------------------------------------------------------------|
-| language           | 是    | en |                                                              |
-| type             | 否    |     |                                                                         |
+| 参数名称     | 是否必须 | 示例      | 备注                           |
+|----------|------|---------|------------------------------|
+| language | 是    | en      | 语言简称，ja、en等                  |
+| type     | 否    | stikers | 运营自定义类型，如素材类型、搜索框位置等，不传表示查全部 |
 
 ### 返回数据
 
-
 ```json
 
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "label": [
+          "Hot"
+        ],
+        "type": "anim",
+        "name": "CAT"
+      },
+      {
+        "label": [
+          "New"
+        ],
+        "type": "anim",
+        "name": "Dog"
+      }
+    ]
+  },
+  "message": "success"
+}
 ```
