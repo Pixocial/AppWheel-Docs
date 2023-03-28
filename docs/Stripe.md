@@ -14,7 +14,7 @@ appwheel.createPaymentMethod({
     "appUserId": "appuserid",
     "type": "checkout",
     "successUrl": "http://www.baidu.com?success",
-    "cancelUrl": "http://www.baidu.com?cancel"
+    "cancelUrl": "http://www.baidu.com?cancelurl"
 }).then(res => res.json()).then(json => console.log)
 ```
 
