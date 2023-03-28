@@ -8,6 +8,11 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Mar 28,2023
+##### version 1.1.3.0
+- 修改marvel的地址
+- 缇娜家推荐词功能
+
 #### Update - Mar 7,2023
 ##### version 1.1.1.0
 - 修改权益类名
@@ -105,6 +110,12 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+
+#### Update - Mar 7,2023
+##### version 2.1.1.0
+- 修改marvel的地址
+- 缇娜家推荐词功能
 
 #### Update - Mar 7,2023
 ##### version 2.1.1.0
