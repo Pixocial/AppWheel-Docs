@@ -8,7 +8,8 @@ id: stripe
 
 ## 获取Stripe配置
 
-**为了支持Stripe支付，您必须拥有自己的Stripe账户，并在AppWheel中填写相关信息。**
+**为了支持Stripe支付，您必须拥有自己的Stripe账户，并在AppWheel中填写相关信息。
+创建Stripe账号参考[Stripe 账户](https://stripe.com/docs/account)。**
 
 ### 1.1 从[Stripe管理后台](https://dashboard.stripe.com/apikeys)获取API秘钥
 
@@ -23,10 +24,14 @@ id: stripe
 ### 1.3  Stripe 通知配置
 
 ![1-3](/img/stripePayments/create_apps_03.png)
+
 复制WebHook URL，在Stripe中创建WebHook，并在AppWheel和WebHook中回填密钥签名。
 
+![create_webhook](/img/stripePayments/create_webhook.png)
+
+
 ![1-4](/img/stripePayments/webhooks-en.png)
-至少勾选以下事件：
+***至少勾选以下事件：***
 
 - charge.refunded
 - customer.subscription.created
