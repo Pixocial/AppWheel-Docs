@@ -13,6 +13,8 @@ slug: /
 
 ### 第一步：创建应用
 
+App ID 填写参考[文档](https://meitu.feishu.cn/docs/doccnYsh95qRWxMee5F2CyACC2f)。
+
 ![Overall Process](/img/integration/createAnApp.png)
 
 - **App name:** 你的应用名称
@@ -156,6 +158,8 @@ slug: /
 ## Android对接
 
 ### 第一步：创建应用
+
+App ID 填写参考[文档](https://meitu.feishu.cn/docs/doccnYsh95qRWxMee5F2CyACC2f)。
 
 ![createAnAppAndroid](/img/integration/createAnAppAndroid.png)
 

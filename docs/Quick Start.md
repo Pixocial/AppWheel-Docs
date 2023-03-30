@@ -10,6 +10,8 @@ slug: /
 ## iOS Integration
 ### Step 1: Create an app
 
+App ID Reference [Document](https://meitu.feishu.cn/docs/doccnYsh95qRWxMee5F2CyACC2f)。
+
 ![Overall Process](/img/integration/createAnApp.png)
 
 - **App name:** The name of your app
@@ -142,6 +144,8 @@ If your project is a Swift project, then you need to [import Objective-C into Sw
 
 ## Android Integration
 ### Step 1: Create an app
+
+App ID reference [Document](https://meitu.feishu.cn/docs/doccnYsh95qRWxMee5F2CyACC2f)。
 
 ![createAnAppAndroid](/img/integration/createAnAppAndroid.png)
 - **App name**: The name of your app
