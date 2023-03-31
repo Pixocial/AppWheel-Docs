@@ -1,10 +1,12 @@
 ---
 sidebar_position: 5
-title: 弹窗设置
+title: 弹窗设置(限时免费)
 id: 弹窗设置
 ---
 
 ## 获取弹窗列表
+
+限时免费功能也通过弹窗接口获取配置
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -13,23 +15,25 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Java" label="Java" default>
 
 ```Java
-MarvelManager.getInstance().getPopup(countryCode, language, phrase, update, effectiveFilter, timezoneOffset, new AWHttpOriginalCallback() {
-      @Override
-      public void response(int code, String data) {
+MarvelManager.getInstance().getPopup(countryCode,language,phrase,update,effectiveFilter,timezoneOffset,new AWHttpOriginalCallback(){
+@Override
+public void response(int code,String data){
 
-      }
-});
+        }
+        });
 ```
+
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
 
-MarvelManager.getInstance().getPopup(countryCode, language,phrase, update, effectiveFilter, timezoneOffset, object : AWHttpOriginalCallback{
-      override fun response(code: Int, data: String?) {
-      }
+MarvelManager.getInstance().getPopup(countryCode, language, phrase, update, effectiveFilter, timezoneOffset, object : AWHttpOriginalCallback {
+    override fun response(code: Int, data: String?) {
+    }
 })
 ```
+
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
 
@@ -40,6 +44,7 @@ MarvelManager.getInstance().getPopup(countryCode, language,phrase, update, effec
             
 }];
 ```
+
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
@@ -51,10 +56,12 @@ AWMarvelManager.sharedInstance().getPopupWithLanguage(language, withCountryCode:
 }
 
 ```
+
   </TabItem>
 </Tabs>
 
 ### 参数
+
 - language：语言
 - countryCode：国家
 - phrase： 预发布密码（可空）
@@ -77,7 +84,17 @@ number：2</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> popup
                </tbody>
               </table>
 
+### 限时免费特性列表
+
+实际以后台配置列表为主
+
+| APP | 功能列表                                                                                                                                                                                                                                                                                                                                                   |
+|-----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AB  | "align","background","bokeh","colors","contouring","details","eraser","firm","foundation","glitter","hairdye","hairline bangs","hairstyles video_sculpt","highlighter","magic","matte","preset","relight","reshape","resize","sculpt","skin tone","stamp","text","texture","video_clarity","video_concealer","video_details","video_firm","video_matte |
+| B+  | "3D highlighting","Acne","Body tuner","Concealer","Dark circles","Details","Disperse","Enhance","Firm","HD retouch","Remove BG","Remover","Reshape","Teeth correction"                                                                                                                                                                                 |
+
 ### Example
+
 ```Json
 {
   "code": 0,
@@ -210,23 +227,25 @@ number：2</span></td><td ></td></tr><tr ><td ><span ><span >├─</span> popup
   <TabItem value="Java" label="Java" default>
 
 ```Java
-MarvelManager.getInstance().getPopupPreview(rid, countryCode, language, new AWHttpOriginalCallback() {
-                @Override
-                public void response(int code, String data) {
-                    
-                }
-            });
+MarvelManager.getInstance().getPopupPreview(rid,countryCode,language,new AWHttpOriginalCallback(){
+@Override
+public void response(int code,String data){
+
+        }
+        });
 ```
+
   </TabItem>
   <TabItem value="Kotlin" label="Kotlin">
 
 ```Kotlin
 
-MarvelManager.getInstance().getPopupPreview(rid, countryCode, language, object : AWHttpOriginalCallback{
-            override fun response(code: Int, data: String?) {
-            }
-        });
+MarvelManager.getInstance().getPopupPreview(rid, countryCode, language, object : AWHttpOriginalCallback {
+    override fun response(code: Int, data: String?) {
+    }
+});
 ```
+
   </TabItem>
   <TabItem value="Objective-C" label="Objective-C">
 
@@ -235,6 +254,7 @@ MarvelManager.getInstance().getPopupPreview(rid, countryCode, language, object :
             
     }];
 ```
+
   </TabItem>
   <TabItem value="Swift" label="Swift">
 
@@ -244,15 +264,18 @@ AWMarvelManager.sharedInstance().getPopupPreview(withRid: rid, withLanguage: lan
             
         }
 ```
+
   </TabItem>
 </Tabs>
 
 ### 参数
+
 - rid: 弹窗ID，例如：BP_POP_00000015
 - language：语言
 - countryCode：国家
 
 ### 返回
+
 ```Json
 {
   "code": 0,
