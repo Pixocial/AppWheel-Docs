@@ -145,18 +145,18 @@ appwheel.initUser("appuserid").then(res => res.json()).then((json) => {
   <TabItem value="Java" label="Java" default>
 
 ```Java
-Market.getInstance().getStripePurchaseInfo(new StripeQueryOrderListener(){
+Market.getInstance().queryEntitlements(new StripeQueryOrderListener(){
 @Override
 public void onSuccess(StripePurchaseInfo info){
         //拿到权益
         List<StripeOrderModel> list=info.entitlement;
-        }
+  }
 
 @Override
 public void onError(String msg){
 
-        }
-        });
+  }
+});
 ```
 
   </TabItem>
@@ -164,7 +164,7 @@ public void onError(String msg){
 
 ```Kotlin
 
-Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener {
+Market.getInstance().queryEntitlements(object : StripeQueryOrderListener {
     override fun onSuccess(info: StripePurchaseInfo?) {
         //获取权益
         info?.entitlement
@@ -180,7 +180,7 @@ Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener {
   <TabItem value="Objective-C" label="Objective-C">
 
 ```Objective-C 
-[AWPurchaseKit queryStripeOrdersWithCompletion:^(BOOL success, AWStripePurchaseInfo * _Nullable info, AWError * _Nullable error) {
+[AWPurchaseKit queryEntitlementsWithCompletion:^(BOOL success, AWStripePurchaseInfo * _Nullable info, AWError * _Nullable error) {
     if (error) {
       //do something
         return;
@@ -196,7 +196,7 @@ Market.getInstance().getStripePurchaseInfo(object : StripeQueryOrderListener {
   <TabItem value="Swift" label="Swift">
 
 ```Swift
-AWPurchaseKit.queryStripeOrders { success, info, error in
+AWPurchaseKit.queryEntitlements { success, info, error in
     //获取权益
     info?.entitlement
 }
