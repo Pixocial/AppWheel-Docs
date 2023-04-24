@@ -8,10 +8,15 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - Apr 24,2023
+##### version 1.1.4.0
+- 添加miniapp的接口
+
+
 #### Update - Mar 28,2023
 ##### version 1.1.3.0
 - 修改marvel的地址
-- 缇娜家推荐词功能
+- 添加推荐词功能
 
 #### Update - Mar 7,2023
 ##### version 1.1.1.0
@@ -111,11 +116,14 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="iOS" label="iOS">
 
+#### Update - Apr 24,2023
+##### version 2.1.3.0
+- 添加miniapp功能
 
 #### Update - Mar 7,2023
 ##### version 2.1.1.0
 - 修改marvel的地址
-- 缇娜家推荐词功能
+- 添加推荐词功能
 
 #### Update - Mar 7,2023
 ##### version 2.1.1.0
