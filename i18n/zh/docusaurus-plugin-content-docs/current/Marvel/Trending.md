@@ -17,13 +17,13 @@ Market.getInstance().getTrending(lanaguage,type,new Callback(){
 @Override
 public void onFailure(Call call,IOException e){
 
-        }
+}
 
 @Override
 public void onResponse(Call call,Response response)throws IOException{
 
-        }
-        });
+  }
+});
 ```
 
   </TabItem>
