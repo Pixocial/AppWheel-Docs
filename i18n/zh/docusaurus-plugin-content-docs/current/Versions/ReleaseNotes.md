@@ -8,6 +8,12 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Android" label="Android" default>
 
+#### Update - May 30,2023
+##### version 1.1.6.0
+- 添加发券机功能：MarvelManager.getInstance().getCoupon
+- 添加了获取用户属性接口：UserInfoManager.getInstance().getUserAttribute
+
+
 #### Update - May 15,2023
 ##### version 1.1.5.0
 - 添加ProductPurchaseState.autoRenewStatus字段
@@ -119,6 +125,14 @@ import TabItem from '@theme/TabItem';
 
 
 <TabItem value="iOS" label="iOS">
+
+#### Update - May 30,2023
+##### version 2.1.5.0
+- 添加发券机功能：[[AWMarvelManager sharedInstance] getCouponWithLanguage]
+- 添加了获取用户属性接口：[AWPurchaseKit getUserAttributes]
+- 添加了权益过期订单：AWEntitlementPurchaseInfo.invalidEntitlement
+- 修复delUserId无法清除的bug
+- 修改版本号的获取来源由Identify中的build改为version
 
 #### Update - May 15,2023
 ##### version 2.1.4.0
