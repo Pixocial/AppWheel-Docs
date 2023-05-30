@@ -59,39 +59,16 @@ AWMarvelManager.sharedInstance().getCouponWithLanguage(language, withCountryCode
   </TabItem>
 </Tabs>
 
-### 请求参数
+### 参数
+- language：语言
+- countryCode：国家
+- phrase： 预发布密码（可空）
+- update: 当前MD5值（可空）
+- effectiveFilter： 传1新时区逻辑，不传为旧逻辑 （可空）
 
-**Query**
-
-| 参数名称     | 是否必须 | 示例      | 备注                           |
-|----------|------|---------|------------------------------|
-| language | 是    | en      | 语言简称，ja、en等                  |
-| type     | 否    | stikers | 运营自定义类型，如素材类型、搜索框位置等，不传表示查全部 |
 
 ### 返回数据
 
 ```json
 
-{
-  "code": 0,
-  "data": {
-    "list": [
-      {
-        "label": [
-          "Hot"
-        ],
-        "type": "anim",
-        "name": "CAT"
-      },
-      {
-        "label": [
-          "New"
-        ],
-        "type": "anim",
-        "name": "Dog"
-      }
-    ]
-  },
-  "message": "success"
-}
 ```
